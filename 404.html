@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Creative Cosmos Not Found | Stackly Creative Agency</title>
+  <meta name="description" content="The creative project or page you are looking for has ventured into uncharted artistic territory. Return to the Stackly Creative Agency home base.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--bg-primary);
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    /* Animated Dynamic Canvas Background */
+    #canvas-404 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.65;
+    }
+
+    /* Ambient Glow Orbs */
+    .orb-404-1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      top: -100px;
+      right: -100px;
+      background: var(--color-canyon-glow);
+      filter: blur(120px);
+      border-radius: 50%;
+      z-index: 2;
+      animation: float404Orb 14s infinite alternate ease-in-out;
+    }
+
+    .orb-404-2 {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      bottom: -100px;
+      left: -100px;
+      background: rgba(141, 166, 204, 0.25);
+      filter: blur(120px);
+      border-radius: 50%;
+      z-index: 2;
+      animation: float404Orb 18s infinite alternate-reverse ease-in-out;
+    }
+
+    @keyframes float404Orb {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(40px, -40px) scale(1.15); }
+    }
+
+    .error-card {
+      position: relative;
+      z-index: 10;
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+      background: rgba(18, 23, 33, 0.75);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 56px 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      animation: cardAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes cardAppear {
+      from { opacity: 0; transform: translateY(30px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .error-logo-wrap {
+      margin-bottom: 28px;
+    }
+
+    .error-logo {
+      height: 48px;
+      width: auto;
+      margin: 0 auto;
+    }
+
+    .big-404-text {
+      font-family: var(--font-heading);
+      font-size: clamp(6rem, 14vw, 9.5rem);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, var(--color-buttercream) 0%, var(--color-canyon) 50%, var(--color-morning-sky) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 10px 40px rgba(223, 109, 65, 0.2);
+    }
+
+    .error-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+
+    .error-description {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .floating-shape {
+      position: absolute;
+      pointer-events: none;
+      z-index: 3;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      animation: floatShape 8s ease-in-out infinite alternate;
+    }
+
+    .shape-1 {
+      width: 60px;
+      height: 60px;
+      top: 15%;
+      left: 10%;
+      border-color: rgba(223, 109, 65, 0.4);
+      transform: rotate(15deg);
+    }
+
+    .shape-2 {
+      width: 45px;
+      height: 45px;
+      bottom: 20%;
+      right: 12%;
+      border-color: rgba(247, 216, 154, 0.4);
+      transform: rotate(-25deg);
+      animation-duration: 11s;
+    }
+
+    @keyframes floatShape {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-25px) rotate(18deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full Viewport Loader -->
+  <div id="page-loader" role="status" aria-live="polite">
+    <div class="loader-brand">
+      <img src="assets/images/logoStackly.webp" alt="Stackly Logo" class="loader-logo">
+      <div class="loader-spinner-wrap">
+        <div class="loader-spinner"></div>
+      </div>
+      <span class="loader-text">Navigating Canvas...</span>
+    </div>
+  </div>
+
+  <!-- Animated Background Orbs & Shapes -->
+  <div class="orb-404-1"></div>
+  <div class="orb-404-2"></div>
+  <div class="floating-shape shape-1"></div>
+  <div class="floating-shape shape-2"></div>
+  <canvas id="canvas-404"></canvas>
+
+  <!-- 404 Central Card (NO Navbar, NO Footer) -->
+  <main class="error-card" role="main">
+    <div class="error-logo-wrap">
+      <a href="index.html" title="Return to Stackly Home">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="error-logo">
+      </a>
+    </div>
+
+    <div class="big-404-text">404</div>
+    <h1 class="error-title">Page Wandered Off Canvas</h1>
+    <p class="error-description">
+      The creative brief, showcase prototype, or link you are seeking has been archived or moved into a new digital dimension. Let's redirect your vision back to our main portfolio showcase.
+    </p>
+
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary btn-lg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Back to Homepage</span>
+      </a>
+
+      <button type="button" onclick="history.back()" class="btn btn-secondary btn-lg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Go Back Previous</span>
+      </button>
+
+      <a href="contact.html" class="btn btn-accent btn-lg">
+        <span>Reach Our Studio</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Canvas Interactive Star / Particle Grid Background
+    const canvas = document.getElementById('canvas-404');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const particleCount = Math.min(65, Math.floor((width * height) / 18000));
+    const colors = ['#DF6D41', '#F7D89A', '#8DA6CC', '#AAA648'];
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 2.5 + 1,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        vx: (Math.random() - 0.5) * 0.6,
+        vy: (Math.random() - 0.5) * 0.6
+      });
+    }
+
+    function renderParticles() {
+      ctx.clearRect(0, 0, width, height);
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(141, 166, 204, ${0.15 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(renderParticles);
+    }
+    renderParticles();
+  </script>
+</body>
+</html>
+

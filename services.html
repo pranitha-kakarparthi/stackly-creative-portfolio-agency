@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Creative Disciplines | Stackly Creative Agency</title>
+  <meta name="description" content="Discover Stackly's comprehensive creative disciplines: brand architecture, UI/UX systems, motion design, 3D WebGL, and modern front-end engineering.">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Full Viewport Page Loader -->
+  <div id="page-loader" role="status" aria-live="polite">
+    <div class="loader-brand">
+      <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="loader-logo">
+      <div class="loader-spinner-wrap">
+        <div class="loader-spinner"></div>
+      </div>
+      <span class="loader-text">Loading Capabilities...</span>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" title="Stackly Home">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu-desktop" role="navigation" aria-label="Main Navigation">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link active">
+            <span>Services</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="services.html" class="dropdown-link active">Full Services Directory</a>
+            <a href="service-details.html" class="dropdown-link">Brand & Experience Lab</a>
+            <a href="404.html" class="dropdown-link">Motion & 3D WebGL</a>
+            <a href="404.html" class="dropdown-link">Design Systems Core</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">
+            <span>Portfolio</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="portfolio.html" class="dropdown-link">Selected Works</a>
+            <a href="project-details.html" class="dropdown-link">Lumina Brand Case Study</a>
+            <a href="404.html" class="dropdown-link">Nexus FinTech Archive</a>
+            <a href="404.html" class="dropdown-link">Spatial Audio Showcase</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="team.html" class="nav-link">Collective</a>
+        </div>
+        <div class="nav-item">
+          <a href="pricing.html" class="nav-link">Pricing</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Action CTAs -->
+      <div class="nav-actions-desktop">
+        <a href="sign-in.html" class="btn btn-secondary btn-sm">Sign In</a>
+        <a href="sign-up.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Navigation Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="about.html" class="mobile-nav-link">About Us</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle active">
+          <span>Services</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <div class="mobile-submenu open">
+          <a href="services.html" class="mobile-sub-link active">Full Services Directory</a>
+          <a href="service-details.html" class="mobile-sub-link">Brand & Experience Lab</a>
+          <a href="404.html" class="mobile-sub-link">Motion & 3D WebGL</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+          <span>Portfolio</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <div class="mobile-submenu">
+          <a href="portfolio.html" class="mobile-sub-link">Selected Works</a>
+          <a href="project-details.html" class="mobile-sub-link">Lumina Brand Case Study</a>
+          <a href="404.html" class="mobile-sub-link">Nexus FinTech Archive</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="team.html" class="mobile-nav-link">Collective</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <div class="mobile-actions">
+      <a href="sign-in.html" class="btn btn-secondary">Sign In</a>
+      <a href="sign-up.html" class="btn btn-primary">Start Project</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- SECTION 1: SERVICES HERO WITH ANIMATED BACKGROUND -->
+    <section class="page-hero" aria-label="Services Hero">
+      <div class="hero-bg-layer">
+        <img src="assets/images/hero-digital-design-craft.webp" alt="Digital design craftsmanship and modern UI architecture" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
+      <div class="container hero-content" data-animate>
+        <div class="hero-breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span class="current">Services Directory</span>
+        </div>
+
+        <span class="badge-pill canyon">Comprehensive Disciplines</span>
+
+        <h1 class="hero-title">
+          Engineering High-Impact <span class="hero-highlight">Digital Realities</span>.
+        </h1>
+
+        <p class="hero-description">
+          We combine bespoke brand identity, intuitive product interface architecture, cinematic motion storytelling, and performant front-end code under one agile roof.
+        </p>
+
+        <div class="hero-actions">
+          <a href="service-details.html" class="btn btn-primary">Deep Dive Brand Lab</a>
+          <a href="contact.html" class="btn btn-secondary">Request Custom Scope</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 6 CORE CAPABILITIES DIRECTORY -->
+    <section class="section" aria-label="Services Directory">
+      <div class="container">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill buttercream">Our Breadth</span>
+          <h2 class="section-title">End-to-End Creative Execution</h2>
+          <p class="section-subtitle">Every phase of your digital product lifecycle covered with senior-level mastery.</p>
+        </div>
+
+        <div class="grid-3" data-animate>
+          <!-- 1 -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.35rem;">Brand Identity Systems</h3>
+            <p style="margin-bottom: 24px; font-size: 0.925rem; color: var(--text-muted);">
+              From logo geometry and generative token hierarchies to art direction and editorial tone of voice.
+            </p>
+            <a href="service-details.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Deliverables</a>
+          </div>
+
+          <!-- 2 -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.35rem;">UI/UX Product Design</h3>
+            <p style="margin-bottom: 24px; font-size: 0.925rem; color: var(--text-muted);">
+              Complex web platforms, mobile apps, and enterprise SaaS transformed into intuitive, frictionless workflows.
+            </p>
+            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Deliverables</a>
+          </div>
+
+          <!-- 3 -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.35rem;">Motion & 3D Interactive</h3>
+            <p style="margin-bottom: 24px; font-size: 0.925rem; color: var(--text-muted);">
+              WebGL shaders, physics-based scroll triggers, and cinematic 3D product visualizations that captivate users.
+            </p>
+            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Deliverables</a>
+          </div>
+
+          <!-- 4 -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.35rem;">Modern Web Engineering</h3>
+            <p style="margin-bottom: 24px; font-size: 0.925rem; color: var(--text-muted);">
+              WCAG AA accessible, ultra-optimized frontend architectures achieving consistent 95+ Lighthouse benchmark scores.
+            </p>
+            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Deliverables</a>
+          </div>
+
+          <!-- 5 -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.35rem;">Design Systems & Tokens</h3>
+            <p style="margin-bottom: 24px; font-size: 0.925rem; color: var(--text-muted);">
+              Centralized Figma and code token libraries enabling multiple development teams to ship consistently at scale.
+            </p>
+            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Deliverables</a>
+          </div>
+
+          <!-- 6 -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.35rem;">Conversion Audits & CRO</h3>
+            <p style="margin-bottom: 24px; font-size: 0.925rem; color: var(--text-muted);">
+              UX friction diagnostics, behavioral heatmaps, customer journey mapping, and conversion-boosting refinements.
+            </p>
+            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Deliverables</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: DEEP DIVE: BRAND STRATEGY -->
+    <section class="section section-darker" aria-label="Brand Strategy Deep Dive">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 48px;">
+          <div data-animate>
+            <span class="badge-pill canyon">Discipline 01</span>
+            <h2 class="section-title">Brand Architecture & Visual Identity</h2>
+            <p style="font-size: 1.05rem; margin-bottom: 20px;">
+              Your brand is your greatest intangible asset. We sculpt comprehensive identity systems that command authority, foster emotional connections, and outlive fleeting aesthetic fads.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.95rem; color: var(--text-secondary);">
+              <li>✓ Strategic Archetype Positioning & Narrative</li>
+              <li>✓ Primary & Secondary Wordmarks with Monogram Variations</li>
+              <li>✓ Chromatic Harmony & Accessible Contrast Systems</li>
+              <li>✓ Bespoke Typographic Hierarchies & Pairings</li>
+              <li>✓ Physical & Digital Brand Expression Guidelines</li>
+            </ul>
+            <a href="service-details.html" class="btn btn-primary">Explore Service Details</a>
+          </div>
+
+          <div data-animate>
+            <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
+              <img src="assets/images/typography-design-system-specimen.webp" alt="Typography specimen and branding design system components" style="width: 100%; height: 380px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DEEP DIVE: UI/UX PRODUCT SYSTEMS -->
+    <section class="section" aria-label="UI/UX Product Architecture">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 48px;">
+          <div data-animate style="order: 2;">
+            <span class="badge-pill buttercream">Discipline 02</span>
+            <h2 class="section-title">Intuitive Digital Product Architecture</h2>
+            <p style="font-size: 1.05rem; margin-bottom: 20px;">
+              Great software feels invisible to the user. We synthesize dense data workflows, complex states, and enterprise permissions into serene, effortlessly usable interfaces.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.95rem; color: var(--text-secondary);">
+              <li>✓ Information Architecture & Sitemaps</li>
+              <li>✓ Interactive Low & High-Fidelity Wireframes</li>
+              <li>✓ Clickable Micro-Interaction Prototypes</li>
+              <li>✓ Multi-Device Responsive Breakpoints (320px to 4K)</li>
+              <li>✓ Complete Figma Component Tokens & Variant Sets</li>
+            </ul>
+            <a href="404.html" class="btn btn-secondary">Request UI/UX Scope</a>
+          </div>
+
+          <div data-animate style="order: 1;">
+            <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
+              <img src="assets/images/project-nexus-fintech-dashboard-suite.webp" alt="UI UX dashboard design system preview" style="width: 100%; height: 380px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DEEP DIVE: MOTION & 3D WEBGL -->
+    <section class="section section-darker" aria-label="Motion and WebGL">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 48px;">
+          <div data-animate>
+            <span class="badge-pill olive">Discipline 03</span>
+            <h2 class="section-title">Cinematic Motion & WebGL Shaders</h2>
+            <p style="font-size: 1.05rem; margin-bottom: 20px;">
+              Static websites are relics of the past. We infuse digital canvases with fluid physics, tactile tactile hover responses, and lightweight 3D scenes that achieve emotional elevation without slowing down page loads.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.95rem; color: var(--text-secondary);">
+              <li>✓ 60 FPS WebGL Interactive Canvas Experiences</li>
+              <li>✓ Kinetic Typography & Scroll-Driven Choreography</li>
+              <li>✓ 3D Product Modeling & PBR Shading</li>
+              <li>✓ Optimized SVG & Lottie Micro-Interactions</li>
+              <li>✓ Respect For Prefers-Reduced-Motion Accessibility</li>
+            </ul>
+            <a href="404.html" class="btn btn-secondary">Watch Motion Showreel</a>
+          </div>
+
+          <div data-animate>
+            <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
+              <img src="assets/images/project-hyperion-spatial-audio-hardware.webp" alt="3D spatial audio hardware and interactive product model" style="width: 100%; height: 380px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SERVICE COMPARISON MATRIX -->
+    <section class="section" aria-label="Engagement Matrix">
+      <div class="container">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill morning-sky">Selection Matrix</span>
+          <h2 class="section-title">Service Engagement Models Compared</h2>
+          <p class="section-subtitle">A transparent breakdown to determine the optimal partnership structure for your team.</p>
+        </div>
+
+        <div class="table-responsive" data-animate style="background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); padding: 20px;">
+          <table class="dash-table">
+            <thead>
+              <tr>
+                <th>Capabilities & Deliverables</th>
+                <th>Strategic Advisory</th>
+                <th>Project Sprint</th>
+                <th>Studio Retainer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Discovery & Positioning</strong></td>
+                <td>High-Level Audit</td>
+                <td>Full 2-Week Immersion</td>
+                <td>Continuous Strategic Alignment</td>
+              </tr>
+              <tr>
+                <td><strong>Brand Identity Systems</strong></td>
+                <td>Review & Critique</td>
+                <td>Complete Core System</td>
+                <td>Multi-Brand Scaled Tokens</td>
+              </tr>
+              <tr>
+                <td><strong>UI/UX Wireframes & Prototypes</strong></td>
+                <td>Heuristic Feedback</td>
+                <td>Up to 12 Core Screens</td>
+                <td>Unlimited Iterations</td>
+              </tr>
+              <tr>
+                <td><strong>Frontend Code Delivery</strong></td>
+                <td>Architecture Specs</td>
+                <td>Turnkey Landing Portal</td>
+                <td>Full Product Component Library</td>
+              </tr>
+              <tr>
+                <td><strong>Senior Talent Access</strong></td>
+                <td>Bi-Weekly Sync</td>
+                <td>Dedicated Lead Designer</td>
+                <td>Dedicated Art Director + Tech Lead</td>
+              </tr>
+              <tr>
+                <td><strong>Turnaround & Velocity</strong></td>
+                <td>Flexible</td>
+                <td>2 - 4 Weeks Guaranteed</td>
+                <td>Continuous Weekly Sprints</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: MODERN TECH & DESIGN STACK -->
+    <section class="section section-darker" aria-label="Tooling and Stack">
+      <div class="container text-center" data-animate>
+        <span class="badge-pill canyon">Our Arsenal</span>
+        <h2 class="section-title">Engineered With Leading-Edge Tooling</h2>
+        <p class="section-subtitle">We partner with premier platforms to guarantee high fidelity and zero production debt.</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+          <div class="badge-pill buttercream" style="padding: 10px 20px; font-size: 0.95rem;">Figma Enterprise Tokens</div>
+          <div class="badge-pill canyon" style="padding: 10px 20px; font-size: 0.95rem;">Three.js & WebGL</div>
+          <div class="badge-pill morning-sky" style="padding: 10px 20px; font-size: 0.95rem;">Semantic HTML5 & Modern CSS</div>
+          <div class="badge-pill olive" style="padding: 10px 20px; font-size: 0.95rem;">React & Next.js Headless</div>
+          <div class="badge-pill buttercream" style="padding: 10px 20px; font-size: 0.95rem;">Blender 3D Modeling</div>
+          <div class="badge-pill canyon" style="padding: 10px 20px; font-size: 0.95rem;">WCAG AA Audit Suites</div>
+          <div class="badge-pill morning-sky" style="padding: 10px 20px; font-size: 0.95rem;">Tailwind & CSS Tokens</div>
+          <div class="badge-pill olive" style="padding: 10px 20px; font-size: 0.95rem;">GSAP & Motion Choreography</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CLIENT SUCCESS METRICS -->
+    <section class="section" aria-label="Verified Outcomes">
+      <div class="container">
+        <div class="grid-4" data-animate>
+          <div class="stat-card">
+            <div class="stat-number">+180%</div>
+            <div class="stat-label">Inbound Client Pipeline</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">-65%</div>
+            <div class="stat-label">UI Dev Production Time</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">99.8%</div>
+            <div class="stat-label">Design Token Uptime</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4.98</div>
+            <div class="stat-label">Client Satisfaction Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FREQUENTLY ASKED SERVICE QUESTIONS -->
+    <section class="section section-darker" aria-label="Service FAQs">
+      <div class="container" style="max-width: 860px;">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill morning-sky">Questions Answered</span>
+          <h2 class="section-title">Service Engagement Inquiries</h2>
+          <p class="section-subtitle">Straightforward answers about our deliverables and process.</p>
+        </div>
+
+        <div class="accordion" data-animate>
+          <div class="accordion-item active">
+            <button class="accordion-header" type="button" aria-expanded="true">
+              <span>Can you collaborate with our existing internal developers?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              Absolutely. A large portion of our engagements involve embedding our lead designers and front-end architects alongside internal client engineering teams to build shared design tokens and component standards.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">
+              <span>What format do you deliver final design assets in?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              All visual assets are delivered via fully organized Figma libraries with auto-layout and variable modes, SVG vector icons, WebP optimized raster graphics, and documented code tokens.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">
+              <span>What if our project scope changes during a sprint?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              We operate an agile backlog. If priorities shift mid-sprint, we simply swap deliverables of equivalent story points during our weekly alignment check-ins with zero contractual friction.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: CONVERSION CTA -->
+    <section class="section" aria-label="Call to Action" style="overflow: hidden; position: relative;">
+      <div class="hero-orb hero-orb-1" style="top: 10%; right: 10%;"></div>
+      <div class="container text-center" style="position: relative; z-index: 5;" data-animate>
+        <span class="badge-pill canyon">Take The Leap</span>
+        <h2 style="font-size: clamp(2.2rem, 4vw, 3.5rem); margin: 20px 0;">
+          Transform Your Product Into An <span class="hero-highlight">Industry Benchmark</span>.
+        </h2>
+        <p style="font-size: 1.1rem; max-width: 620px; margin: 0 auto 36px; color: var(--text-secondary);">
+          Schedule a preliminary 30-minute studio architecture review with our creative directors.
+        </p>
+        <div style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Book Architecture Review</a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">Review Engagement Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" title="Stackly Home">
+            <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="footer-logo">
+          </a>
+          <p class="footer-brand-desc">
+            Stackly is an international creative portfolio agency engineering bespoke brand identities, high-fidelity UI/UX products, and memorable interactive systems.
+          </p>
+        </div>
+
+        <!-- Quick Links (Valid Navigation) -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio Disciplines (Redirects to 404 per instructions) -->
+        <div>
+          <h4 class="footer-title">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="404.html" class="footer-link">Brand Architecture</a></li>
+            <li><a href="404.html" class="footer-link">Digital Product UI/UX</a></li>
+            <li><a href="404.html" class="footer-link">Motion & 3D Shaders</a></li>
+            <li><a href="404.html" class="footer-link">Full-Stack Engineering</a></li>
+            <li><a href="404.html" class="footer-link">Design System Tokens</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details & Social Links -->
+        <div>
+          <h4 class="footer-title">Global Studio</h4>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu 636008</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="404.html" class="footer-link">+91 9876543210</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="404.html" class="footer-link">hello@thestackly.com</a>
+          </div>
+
+          <!-- Social media icon + label -->
+          <div class="footer-socials">
+            <a href="404.html" class="footer-social-btn" title="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.89 0-1.61.72-1.61 1.61s.72 1.61 1.61 1.61 1.61-.72 1.61-1.61-.72-1.61-1.61-1.61z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X / Twitter</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Dribbble">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path><path d="M21.75 12.84c-6.62-1.41-12.14 1-15.35 6.07"></path></svg>
+              <span>Dribbble</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Creative Agency. All rights reserved. Designed for exceptional human experiences.</div>
+        <div class="footer-legal-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Cookie Preferences</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top of page" title="Scroll to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

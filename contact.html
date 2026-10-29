@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Studio & Global Inquiries | Stackly Creative Agency</title>
+  <meta name="description" content="Initiate a dialogue with Stackly's creative leaders. Visit our global studio in Salem, Tamil Nadu or schedule an introductory architecture consultation.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+
+  <!-- Full Viewport Page Loader -->
+  <div id="page-loader" role="status" aria-live="polite">
+    <div class="loader-brand">
+      <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="loader-logo">
+      <div class="loader-spinner-wrap">
+        <div class="loader-spinner"></div>
+      </div>
+      <span class="loader-text">Opening Channels...</span>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" title="Stackly Home">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu-desktop" role="navigation" aria-label="Main Navigation">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">
+            <span>Services</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="services.html" class="dropdown-link">Full Services Directory</a>
+            <a href="service-details.html" class="dropdown-link">Brand & Experience Lab</a>
+            <a href="404.html" class="dropdown-link">Motion & 3D WebGL</a>
+            <a href="404.html" class="dropdown-link">Design Systems Core</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">
+            <span>Portfolio</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="portfolio.html" class="dropdown-link">Selected Works</a>
+            <a href="project-details.html" class="dropdown-link">Lumina Brand Case Study</a>
+            <a href="404.html" class="dropdown-link">Nexus FinTech Archive</a>
+            <a href="404.html" class="dropdown-link">Spatial Audio Showcase</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="team.html" class="nav-link">Collective</a>
+        </div>
+        <div class="nav-item">
+          <a href="pricing.html" class="nav-link">Pricing</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Action CTAs -->
+      <div class="nav-actions-desktop">
+        <a href="sign-in.html" class="btn btn-secondary btn-sm">Sign In</a>
+        <a href="sign-up.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Navigation Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="about.html" class="mobile-nav-link">About Us</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+          <span>Services</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <div class="mobile-submenu">
+          <a href="services.html" class="mobile-sub-link">Full Services Directory</a>
+          <a href="service-details.html" class="mobile-sub-link">Brand & Experience Lab</a>
+          <a href="404.html" class="mobile-sub-link">Motion & 3D WebGL</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+          <span>Portfolio</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <div class="mobile-submenu">
+          <a href="portfolio.html" class="mobile-sub-link">Selected Works</a>
+          <a href="project-details.html" class="mobile-sub-link">Lumina Brand Case Study</a>
+          <a href="404.html" class="mobile-sub-link">Nexus FinTech Archive</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="team.html" class="mobile-nav-link">Collective</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="contact.html" class="mobile-nav-link active">Contact</a>
+      </li>
+    </ul>
+
+    <div class="mobile-actions">
+      <a href="sign-in.html" class="btn btn-secondary">Sign In</a>
+      <a href="sign-up.html" class="btn btn-primary">Start Project</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- SECTION 1: HERO WITH ANIMATED BACKGROUND -->
+    <section class="page-hero" aria-label="Contact Hero">
+      <div class="hero-bg-layer">
+        <img src="assets/images/hero-contact-connect-hub.webp" alt="Global architectural headquarters and studio hub" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+
+      <div class="container hero-content" data-animate>
+        <div class="hero-breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span class="current">Contact Us</span>
+        </div>
+
+        <span class="badge-pill canyon">Direct Studio Access</span>
+
+        <h1 class="hero-title">
+          Initiate The Dialogue. <span class="hero-highlight">Shape The Future</span>.
+        </h1>
+
+        <p class="hero-description">
+          Whether you have an upcoming product sprint, an ambitious rebrand, or need an enterprise design token architecture, we'd love to explore how we can collaborate.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT CARDS (404 REDIRECTIONS FOR PHONE, EMAIL & SOCIAL) -->
+    <section class="section" aria-label="Studio Information">
+      <div class="container">
+        <div class="grid-3" data-animate>
+          <!-- Address Card -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Studio Headquarters</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">
+              MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu 636008
+            </p>
+            <span style="font-size: 0.8rem; color: var(--color-buttercream); font-weight: 600;">Mon - Fri • 9:00 AM - 6:30 PM IST</span>
+          </div>
+
+          <!-- Phone Card (Redirects to 404 per instructions) -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Direct Telephony</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 12px;">
+              <a href="404.html" style="color: var(--color-buttercream); font-weight: 700; font-size: 1.15rem;">+91 9876543210</a>
+            </p>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Executive Line (Click redirects to inquiry portal)</span>
+          </div>
+
+          <!-- Email Card (Redirects to 404 per instructions) -->
+          <div class="card-glass">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Studio Inquiries</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 12px;">
+              <a href="404.html" style="color: var(--color-canyon); font-weight: 700; font-size: 1.15rem;">hello@thestackly.com</a>
+            </p>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Typical response window within 12 business hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VALIDATED CONTACT FORM -->
+    <section class="section section-darker" aria-label="Inquiry Form Section">
+      <div class="container" style="max-width: 860px;">
+        <div class="card-glass" style="padding: 48px;" data-animate>
+          <div style="margin-bottom: 32px; text-align: center;">
+            <span class="badge-pill buttercream">Project Briefing</span>
+            <h2 style="font-size: 2.2rem; margin: 12px 0;">Tell Us About Your Project</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Please complete the mandatory fields below. Our team reviews all submissions directly.</p>
+          </div>
+
+          <!-- Status Banner -->
+          <div id="contact-alert" class="auth-alert" role="alert"></div>
+
+          <form id="studio-contact-form" novalidate>
+            <!-- Name (Only Alphabets) -->
+            <div class="form-group">
+              <label for="contact-name" class="form-label">
+                <span>Full Name <span class="required-badge">*</span></span>
+                <span class="optional-badge">Alphabets only</span>
+              </label>
+              <input type="text" id="contact-name" class="form-control input-alphabet-only" placeholder="e.g. Marcus Vance" required pattern="[A-Za-z\s]+">
+              <div id="contact-name-error" class="error-msg">Full name is required and must contain only alphabets.</div>
+            </div>
+
+            <div class="form-grid-2">
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  <span>Corporate Email <span class="required-badge">*</span></span>
+                </label>
+                <input type="email" id="contact-email" class="form-control" placeholder="marcus@company.com" required>
+                <div id="contact-email-error" class="error-msg">Please enter a valid business email address.</div>
+              </div>
+
+              <!-- Mobile Number (Exact 10 Digits with Country Selector) -->
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">
+                  <span>Mobile Phone <span class="required-badge">*</span></span>
+                  <span class="optional-badge">Exact 10 digits</span>
+                </label>
+                <div class="phone-input-group">
+                  <select id="contact-country-code" class="country-code-select" aria-label="Select Country Code">
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+81">🇯🇵 +81</option>
+                  </select>
+                  <input type="tel" id="contact-phone" class="form-control input-phone-10" placeholder="9876543210" maxlength="10" required pattern="[0-9]{10}">
+                </div>
+                <div id="contact-phone-error" class="error-msg">Mobile number must contain exactly 10 digits.</div>
+              </div>
+            </div>
+
+            <!-- Subject (Required) -->
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">
+                <span>Inquiry Subject / Discipline <span class="required-badge">*</span></span>
+              </label>
+              <select id="contact-subject" class="form-control" required style="cursor: pointer;">
+                <option value="" disabled selected>Select an inquiry area...</option>
+                <option value="brand">Brand Identity & Visual System</option>
+                <option value="uiux">Digital Product UI/UX Architecture</option>
+                <option value="motion">Motion, WebGL & 3D Interactive</option>
+                <option value="retainer">Dedicated Studio Retainer Pod</option>
+                <option value="other">General Studio Collaboration</option>
+              </select>
+              <div id="contact-subject-error" class="error-msg">Please select an inquiry subject.</div>
+            </div>
+
+            <!-- Message (Optional - Empty By Default with Character Counter) -->
+            <div class="form-group">
+              <label for="contact-message" class="form-label">
+                <span>Project Overview / Scope Details</span>
+                <span class="optional-badge">Optional</span>
+              </label>
+              <textarea id="contact-message" class="form-control" rows="5" maxlength="500" placeholder="Share your estimated timeline, goals, and any relevant links..."></textarea>
+              <div class="char-counter"><span id="msg-char-count">0</span> / 500 characters</div>
+            </div>
+
+            <div style="margin-top: 32px; text-align: center;">
+              <button type="submit" class="btn btn-primary btn-lg" style="min-width: 260px;">
+                <span>Send Studio Inquiry</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GOOGLE MAPS EMBED -->
+    <section class="section" aria-label="Studio Location Map">
+      <div class="container">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill olive">Studio Coordinates</span>
+          <h2 class="section-title">Visit Our Salem Headquarters</h2>
+          <p class="section-subtitle">Located in the heart of Tamil Nadu's burgeoning creative and technology corridor.</p>
+        </div>
+
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); height: 420px; box-shadow: var(--shadow-lg);" data-animate>
+          <iframe
+            title="Google Maps Location of Stackly Studio"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.391740924716!2d78.1633!3d11.6854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf05555555555%3A0x5555555555555555!2sChinna%20Tirupathi%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.1);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: STUDIO OPERATING HOURS & TIMEZONES -->
+    <section class="section section-darker" aria-label="Timezone Information">
+      <div class="container">
+        <div class="grid-3" data-animate>
+          <div class="card-glass">
+            <h4 style="color: var(--color-buttercream); margin-bottom: 8px;">Indian Standard Time (IST)</h4>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">09:00 - 18:30</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Main design and development sprints run out of our Salem HQ laboratory.</p>
+          </div>
+          <div class="card-glass">
+            <h4 style="color: var(--color-morning-sky); margin-bottom: 8px;">Central European (CET)</h4>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">08:30 - 17:00</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Direct overlap for London, Berlin, and Zurich client sprint alignments.</p>
+          </div>
+          <div class="card-glass">
+            <h4 style="color: var(--color-canyon); margin-bottom: 8px;">Eastern Time (EST)</h4>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">08:00 - 13:00</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Dedicated asynchronous video walk-throughs and daily morning standup overlaps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FAQ ACCORDION -->
+    <section class="section" aria-label="Inquiry FAQs">
+      <div class="container" style="max-width: 860px;">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill morning-sky">Inquiry FAQ</span>
+          <h2 class="section-title">What Happens After You Inquire?</h2>
+          <p class="section-subtitle">A transparent view of our intake and preliminary discovery process.</p>
+        </div>
+
+        <div class="accordion" data-animate>
+          <div class="accordion-item active">
+            <button class="accordion-header" type="button" aria-expanded="true">
+              <span>How quickly will a creative lead respond?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              All inquiries submitted through this form are reviewed directly by our Executive Creative Director or Principal UI Architect. You will receive an initial personalized assessment within 12 business hours.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">
+              <span>Do you sign Non-Disclosure Agreements (NDAs)?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              Yes. We routinely work with stealth startups, proprietary algorithmic platforms, and unreleased hardware. We are happy to execute standard mutual NDAs prior to in-depth technical discussions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONVERSION CTA -->
+    <section class="section section-darker" aria-label="Call to Action" style="overflow: hidden; position: relative;">
+      <div class="container text-center" style="position: relative; z-index: 5;" data-animate>
+        <span class="badge-pill canyon">Take The Step</span>
+        <h2 style="font-size: clamp(2.2rem, 4vw, 3.5rem); margin: 20px 0;">
+          Let's Build Something <span class="hero-highlight">Truly Iconic</span>.
+        </h2>
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 36px; color: var(--text-secondary);">
+          We only take on select strategic partnerships each season. Reserve your studio sprint early.
+        </p>
+        <div style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;">
+          <a href="#studio-contact-form" class="btn btn-primary btn-lg">Fill The Form Above</a>
+          <a href="portfolio.html" class="btn btn-secondary btn-lg">Browse Studio Works</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" title="Stackly Home">
+            <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="footer-logo">
+          </a>
+          <p class="footer-brand-desc">
+            Stackly is an international creative portfolio agency engineering bespoke brand identities, high-fidelity UI/UX products, and memorable interactive systems.
+          </p>
+        </div>
+
+        <!-- Quick Links (Valid Navigation) -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio Disciplines (Redirects to 404 per instructions) -->
+        <div>
+          <h4 class="footer-title">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="404.html" class="footer-link">Brand Architecture</a></li>
+            <li><a href="404.html" class="footer-link">Digital Product UI/UX</a></li>
+            <li><a href="404.html" class="footer-link">Motion & 3D Shaders</a></li>
+            <li><a href="404.html" class="footer-link">Full-Stack Engineering</a></li>
+            <li><a href="404.html" class="footer-link">Design System Tokens</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details & Social Links -->
+        <div>
+          <h4 class="footer-title">Global Studio</h4>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu 636008</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="404.html" class="footer-link">+91 9876543210</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="404.html" class="footer-link">hello@thestackly.com</a>
+          </div>
+
+          <!-- Social media icon + label -->
+          <div class="footer-socials">
+            <a href="404.html" class="footer-social-btn" title="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.89 0-1.61.72-1.61 1.61s.72 1.61 1.61 1.61 1.61-.72 1.61-1.61-.72-1.61-1.61-1.61z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X / Twitter</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Dribbble">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path><path d="M21.75 12.84c-6.62-1.41-12.14 1-15.35 6.07"></path></svg>
+              <span>Dribbble</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Creative Agency. All rights reserved. Designed for exceptional human experiences.</div>
+        <div class="footer-legal-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Cookie Preferences</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top of page" title="Scroll to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Scripts & Form Logic -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script>
+    // Live character counter for message textarea
+    const msgInput = document.getElementById('contact-message');
+    const charCountEl = document.getElementById('msg-char-count');
+    if (msgInput && charCountEl) {
+      msgInput.addEventListener('input', () => {
+        charCountEl.textContent = msgInput.value.length;
+      });
+    }
+
+    // Contact form validation & submission handler
+    const contactForm = document.getElementById('studio-contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('contact-name');
+        const emailInput = document.getElementById('contact-email');
+        const phoneInput = document.getElementById('contact-phone');
+        const subjectSelect = document.getElementById('contact-subject');
+        const alertBox = document.getElementById('contact-alert');
+
+        let isValid = true;
+        let firstInvalid = null;
+
+        // Reset
+        contactForm.querySelectorAll('.error-msg').forEach(el => el.classList.remove('visible'));
+        contactForm.querySelectorAll('.form-control').forEach(el => el.classList.remove('is-invalid'));
+        if (alertBox) alertBox.classList.remove('visible');
+
+        // 1. Name: Alphabets only
+        const nameVal = nameInput.value.trim();
+        const alphabetRegex = /^[A-Za-z\s]+$/;
+        if (!nameVal || !alphabetRegex.test(nameVal)) {
+          showContactError(nameInput, 'contact-name-error');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = nameInput;
+        }
+
+        // 2. Email
+        const emailVal = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailVal || !emailRegex.test(emailVal)) {
+          showContactError(emailInput, 'contact-email-error');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = emailInput;
+        }
+
+        // 3. Mobile Number: Exact 10 digits
+        const phoneVal = phoneInput.value.trim();
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneVal || !phoneRegex.test(phoneVal)) {
+          showContactError(phoneInput, 'contact-phone-error');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = phoneInput;
+        }
+
+        // 4. Subject
+        if (!subjectSelect.value) {
+          showContactError(subjectSelect, 'contact-subject-error');
+          isValid = false;
+          if (!firstInvalid) firstInvalid = subjectSelect;
+        }
+
+        if (!isValid) {
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+
+        // Success state
+        if (alertBox) {
+          alertBox.className = 'auth-alert success visible';
+          alertBox.innerHTML = `<span>✓ Thank you, <strong>${nameVal}</strong>! Your inquiry has been routed to our Creative Directors. We will connect within 12 business hours.</span>`;
+        }
+
+        contactForm.reset();
+        if (charCountEl) charCountEl.textContent = '0';
+      });
+    }
+
+    function showContactError(inputEl, errorId) {
+      if (inputEl) inputEl.classList.add('is-invalid');
+      const errEl = document.getElementById(errorId);
+      if (errEl) errEl.classList.add('visible');
+    }
+  </script>
+</body>
+</html>
+

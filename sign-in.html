@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Stackly Studio Portal</title>
+  <meta name="description" content="Sign in to your Stackly Studio Portal. Access active design sprints, project milestones, and token deliverables.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body class="auth-page">
+
+  <!-- Full Viewport Page Loader -->
+  <div id="page-loader" role="status" aria-live="polite">
+    <div class="loader-brand">
+      <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="loader-logo">
+      <div class="loader-spinner-wrap">
+        <div class="loader-spinner"></div>
+      </div>
+      <span class="loader-text">Securing Portal...</span>
+    </div>
+  </div>
+
+  <div class="auth-split-wrapper">
+    <!-- LEFT SIDE: FIXED STUDIO SHOWCASE & BRAND IDENTITY -->
+    <aside class="auth-left-fixed" aria-label="Brand Information">
+      <div class="auth-bg-layer">
+        <img src="assets/images/auth-creative-designer-desk.webp" alt="Creative studio architect workspace" class="auth-bg-img">
+        <div class="auth-bg-overlay"></div>
+      </div>
+
+      <div class="auth-left-content">
+        <div class="auth-logo-wrap">
+          <a href="index.html" title="Return to Stackly Home">
+            <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="auth-logo">
+          </a>
+        </div>
+
+        <div class="auth-brand-statement">
+          <span class="badge-pill canyon" style="margin-bottom: 16px;">Studio Portal Gateway</span>
+          <h2 style="font-size: clamp(2rem, 3.2vw, 2.8rem); line-height: 1.15; margin-bottom: 16px; color: #FFFFFF;">
+            Where Groundbreaking <span class="hero-highlight">Aesthetics Converge</span>.
+          </h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 440px; line-height: 1.65;">
+            Authenticate into your customized studio command center to review high-fidelity prototypes, sign off milestone deliverables, and orchestrate creative sprints.
+          </p>
+        </div>
+
+        <!-- Quote Card with Preserved Real Human Face -->
+        <div class="auth-quote-card">
+          <div class="star-rating" style="margin-bottom: 6px;">★★★★★</div>
+          <p class="auth-quote-text">
+            "The Stackly Studio Portal has transformed how our executive team interfaces with ongoing design architecture. Real-time token synchronization and total transparency."
+          </p>
+          <div class="auth-quote-author">
+            <div class="auth-quote-avatar">
+              <img src="assets/images/client-david-ross-nexus-founder.webp" alt="David Ross, Founder of Nexus Systems" class="img-preserve-face">
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #FFFFFF;">David Ross</div>
+              <div style="font-size: 0.8rem; color: var(--color-morning-sky);">Founder & Chief Architect, Nexus Cloud</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT SIDE: SCROLLABLE FORM SECTION -->
+    <main class="auth-right-scrollable" role="main">
+      <div class="auth-top-nav">
+        <a href="index.html" class="auth-back-home">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          <span>Back to Homepage</span>
+        </a>
+
+        <div class="auth-top-action">
+          <span>Don't have an account?</span>
+          <a href="sign-up.html">Register Now</a>
+        </div>
+      </div>
+
+      <div class="auth-form-container">
+        <h1 class="auth-heading">Sign In to Studio</h1>
+        <p class="auth-subheading">Access your personalized portal workspace and active project boards.</p>
+
+        <!-- Social Sign In Grid (All redirect to 404 per instructions) -->
+        <div class="auth-social-grid">
+          <a href="404.html" class="btn-social" title="Sign In with Google">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.1 9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/><path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3 0-.8.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 12.3 0 15s.7 5.3 1.9 7.7l3.7-2.9z"/><path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.1-6.4-5.2L1.9 16c1.8 3.7 5.6 7 10.1 7z"/></svg>
+            <span>Google Workspace</span>
+          </a>
+          <a href="404.html" class="btn-social" title="Sign In with Microsoft">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#F25022" d="M1 1h10v10H1z"/><path fill="#7FBA00" d="M13 1h10v10H13z"/><path fill="#00A4EF" d="M1 13h10v10H1z"/><path fill="#FFB900" d="M13 13h10v10H13z"/></svg>
+            <span>Microsoft 365</span>
+          </a>
+          <a href="404.html" class="btn-social" title="Sign In with LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.89 0-1.61.72-1.61 1.61s.72 1.61 1.61 1.61 1.61-.72 1.61-1.61-.72-1.61-1.61-1.61z"/></svg>
+            <span>LinkedIn ID</span>
+          </a>
+          <a href="404.html" class="btn-social" title="Sign In with Twitter / X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span>X / Twitter</span>
+          </a>
+        </div>
+
+        <div class="auth-divider">Or continue with studio credentials</div>
+
+        <!-- Live Auth Alert Notification -->
+        <div id="signin-alert" class="auth-alert" role="alert"></div>
+
+        <!-- Sign In Form (NO DEMO CREDENTIALS PREFILLED) -->
+        <form id="signin-form" novalidate>
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="signin-email" class="form-label">
+              <span>Business Email Address <span class="required-badge">*</span></span>
+            </label>
+            <div class="input-wrap">
+              <input type="email" id="signin-email" class="form-control" placeholder="name@company.com" required autocomplete="email">
+            </div>
+            <div id="signin-email-error" class="error-msg">Please enter a valid business email address.</div>
+          </div>
+
+          <!-- Password Field with Show/Hide Toggle -->
+          <div class="form-group">
+            <div class="form-label">
+              <span>Password <span class="required-badge">*</span></span>
+              <!-- Forgot Password link redirects intentionally to 404 per instructions -->
+              <a href="404.html" style="font-size: 0.8rem; color: var(--color-morning-sky); font-weight: 500;">Forgot Password?</a>
+            </div>
+            <div class="input-wrap">
+              <input type="password" id="signin-password" class="form-control" placeholder="••••••••••••" required autocomplete="current-password">
+              <button type="button" class="password-toggle-btn" data-target="signin-password" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </div>
+            <div id="signin-pass-error" class="error-msg">Password must be at least 6 characters.</div>
+          </div>
+
+          <!-- Role Selector -->
+          <div class="form-group">
+            <label for="signin-role" class="form-label">
+              <span>Login As / Studio Role <span class="required-badge">*</span></span>
+            </label>
+            <select id="signin-role" class="form-control" required style="cursor: pointer;">
+              <option value="Creative Director" selected>Creative Director / Designer</option>
+              <option value="Admin">Executive Studio Admin</option>
+              <option value="Manager">Delivery & Sprint Manager</option>
+              <option value="Client">Partner / Enterprise Client</option>
+            </select>
+            <div id="signin-role-error" class="error-msg">Please select an agency role.</div>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Sign In to Dashboard</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </form>
+
+        <div style="margin-top: 32px; text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+          Protected by Studio SSL 256-Bit Encryption. By logging in, you agree to our <a href="404.html" style="color: var(--color-buttercream); text-decoration: underline;">Security Protocols</a>.
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
+

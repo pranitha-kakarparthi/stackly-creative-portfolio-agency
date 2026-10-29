@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Studio Retainers | Stackly Creative Agency</title>
+  <meta name="description" content="Transparent, predictable pricing frameworks for ambitious brands. Choose between fixed-scope design sprints or embedded studio retainers.">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Full Viewport Page Loader -->
+  <div id="page-loader" role="status" aria-live="polite">
+    <div class="loader-brand">
+      <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="loader-logo">
+      <div class="loader-spinner-wrap">
+        <div class="loader-spinner"></div>
+      </div>
+      <span class="loader-text">Calculating Models...</span>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" title="Stackly Home">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu-desktop" role="navigation" aria-label="Main Navigation">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">
+            <span>Services</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="services.html" class="dropdown-link">Full Services Directory</a>
+            <a href="service-details.html" class="dropdown-link">Brand & Experience Lab</a>
+            <a href="404.html" class="dropdown-link">Motion & 3D WebGL</a>
+            <a href="404.html" class="dropdown-link">Design Systems Core</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">
+            <span>Portfolio</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="portfolio.html" class="dropdown-link">Selected Works</a>
+            <a href="project-details.html" class="dropdown-link">Lumina Brand Case Study</a>
+            <a href="404.html" class="dropdown-link">Nexus FinTech Archive</a>
+            <a href="404.html" class="dropdown-link">Spatial Audio Showcase</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="team.html" class="nav-link">Collective</a>
+        </div>
+        <div class="nav-item">
+          <a href="pricing.html" class="nav-link active">Pricing</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Action CTAs -->
+      <div class="nav-actions-desktop">
+        <a href="sign-in.html" class="btn btn-secondary btn-sm">Sign In</a>
+        <a href="sign-up.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Navigation Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="about.html" class="mobile-nav-link">About Us</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+          <span>Services</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <div class="mobile-submenu">
+          <a href="services.html" class="mobile-sub-link">Full Services Directory</a>
+          <a href="service-details.html" class="mobile-sub-link">Brand & Experience Lab</a>
+          <a href="404.html" class="mobile-sub-link">Motion & 3D WebGL</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+          <span>Portfolio</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <div class="mobile-submenu">
+          <a href="portfolio.html" class="mobile-sub-link">Selected Works</a>
+          <a href="project-details.html" class="mobile-sub-link">Lumina Brand Case Study</a>
+          <a href="404.html" class="mobile-sub-link">Nexus FinTech Archive</a>
+        </div>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="team.html" class="mobile-nav-link">Collective</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="pricing.html" class="mobile-nav-link active">Pricing</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <div class="mobile-actions">
+      <a href="sign-in.html" class="btn btn-secondary">Sign In</a>
+      <a href="sign-up.html" class="btn btn-primary">Start Project</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- SECTION 1: PRICING HERO WITH ANIMATED BACKGROUND -->
+    <section class="page-hero" aria-label="Pricing Hero">
+      <div class="hero-bg-layer">
+        <img src="assets/images/hero-agency-collaboration-space.webp" alt="Creative studio collaboration space and client briefing boardroom" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
+      <div class="container hero-content" data-animate>
+        <div class="hero-breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span class="current">Pricing & Plans</span>
+        </div>
+
+        <span class="badge-pill canyon">Radical Transparency</span>
+
+        <h1 class="hero-title">
+          Predictable Investments, <span class="hero-highlight">Exponential Returns</span>.
+        </h1>
+
+        <p class="hero-description">
+          No opaque billing hours or surprise change requests. We offer flat-rate design sprints and dedicated embedded studio pods with weekly cadence guarantees.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#pricing-tiers" class="btn btn-primary">View Plans</a>
+          <a href="contact.html" class="btn btn-secondary">Custom Enterprise Inquiry</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3 CORE PRICING TIERS -->
+    <section class="section" id="pricing-tiers" aria-label="Pricing Tiers">
+      <div class="container">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill buttercream">Clear Models</span>
+          <h2 class="section-title">Select Your Studio Model</h2>
+          <p class="section-subtitle">From high-velocity design sprints to dedicated multi-quarter studio retainers.</p>
+        </div>
+
+        <div class="grid-3" data-animate>
+          <!-- Plan 1 -->
+          <div class="card-glass" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge-pill morning-sky" style="margin-bottom: 16px;">Sprint Model</span>
+              <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Brand Launch Sprint</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">For early-stage ventures preparing for a pivotal launch or seed funding round.</p>
+              <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; margin-bottom: 24px; color: #FFFFFF;">
+                $4,800 <span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">/ 2 Weeks</span>
+              </div>
+              <ul style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; font-size: 0.9rem; color: var(--text-secondary);">
+                <li>✓ Full Visual Identity & Logo Geometry</li>
+                <li>✓ Typography & Palette Tokens</li>
+                <li>✓ 5-Page High-Fidelity UI Design in Figma</li>
+                <li>✓ Interactive Clickable Prototype</li>
+                <li>✓ Complete Source Code & Asset Handover</li>
+                <li>✓ Direct Slack Connect With Lead Designer</li>
+              </ul>
+            </div>
+            <a href="404.html" class="btn btn-secondary" style="width: 100%;">Select Sprint Plan</a>
+          </div>
+
+          <!-- Plan 2 (Highlighted) -->
+          <div class="card-glass" style="display: flex; flex-direction: column; justify-content: space-between; border-color: var(--color-canyon); box-shadow: 0 0 35px var(--color-canyon-glow); position: relative;">
+            <div style="position: absolute; top: 16px; right: 16px;">
+              <span class="badge-pill canyon">Most Popular</span>
+            </div>
+            <div>
+              <span class="badge-pill buttercream" style="margin-bottom: 16px;">Studio Retainer</span>
+              <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Dedicated Studio Pod</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">For scaling SaaS and eCommerce leaders needing continuous design velocity.</p>
+              <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; margin-bottom: 24px; color: var(--color-buttercream);">
+                $8,500 <span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">/ Month</span>
+              </div>
+              <ul style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; font-size: 0.9rem; color: var(--text-secondary);">
+                <li>✓ Dedicated Art Director + UI Architect + Tech Lead</li>
+                <li>✓ Unlimited Design Requests & Rapid Revisions</li>
+                <li>✓ Turnkey Semantic Frontend Code Handover</li>
+                <li>✓ WebGL Shaders & Motion Micro-Interactions</li>
+                <li>✓ Bi-Weekly Executive Alignment & Strategy Sync</li>
+                <li>✓ 48-Hour Turnaround On Standard Sprint Tasks</li>
+              </ul>
+            </div>
+            <a href="404.html" class="btn btn-primary" style="width: 100%;">Reserve Studio Pod</a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="card-glass" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge-pill olive" style="margin-bottom: 16px;">Enterprise Flagship</span>
+              <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Enterprise Atelier</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Full-scale architectural rebuilds and multi-brand corporate ecosystems.</p>
+              <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; margin-bottom: 24px; color: #FFFFFF;">
+                $16,500 <span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">/ Milestone</span>
+              </div>
+              <ul style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; font-size: 0.9rem; color: var(--text-secondary);">
+                <li>✓ Multi-Brand Enterprise Design Token Architecture</li>
+                <li>✓ Bespoke Micro-Frontends & Design Tokens</li>
+                <li>✓ Deep Accessibility & Performance Auditing</li>
+                <li>✓ Custom Three.js 3D Product Interactive Models</li>
+                <li>✓ 24/7 Dedicated Support SLA & Staff Training</li>
+                <li>✓ Guaranteed Lighthouse 98+ Performance Score</li>
+              </ul>
+            </div>
+            <a href="404.html" class="btn btn-secondary" style="width: 100%;">Inquire Enterprise</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ADD-ON CAPABILITIES MENU -->
+    <section class="section section-darker" aria-label="Addon Menu">
+      <div class="container">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill olive">Modular Additions</span>
+          <h2 class="section-title">A La Carte Studio Enhancements</h2>
+          <p class="section-subtitle">Tailor your sprint with specialized creative and technical capabilities.</p>
+        </div>
+
+        <div class="grid-4" data-animate>
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; margin-bottom: 6px;">WebGL 3D Shader Pack</h4>
+            <div style="font-family: var(--font-heading); font-weight: 800; color: var(--color-canyon); margin-bottom: 12px;">+$2,200</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Custom interactive 3D model with realistic lighting shaders and 60fps mobile optimization.</p>
+          </div>
+
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; margin-bottom: 6px;">WCAG AAA Access Audit</h4>
+            <div style="font-family: var(--font-heading); font-weight: 800; color: var(--color-buttercream); margin-bottom: 12px;">+$1,800</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Comprehensive automated and manual screen-reader auditing with VPAT compliance certification.</p>
+          </div>
+
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; margin-bottom: 6px;">Motion Lottie Animation Suite</h4>
+            <div style="font-family: var(--font-heading); font-weight: 800; color: var(--color-morning-sky); margin-bottom: 12px;">+$1,400</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">10 bespoke vector micro-interactions tailored for empty states, success modals, and navigation.</p>
+          </div>
+
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; margin-bottom: 6px;">Multi-Platform Token Export</h4>
+            <div style="font-family: var(--font-heading); font-weight: 800; color: var(--color-olive-grove); margin-bottom: 12px;">+$2,800</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Automated Style Dictionary pipeline exporting tokens to iOS Swift, Android Compose, and React.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DETAILED COMPARISON MATRIX -->
+    <section class="section" aria-label="Feature Comparison">
+      <div class="container">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill morning-sky">Full Feature Breakdown</span>
+          <h2 class="section-title">Comprehensive Comparison Table</h2>
+          <p class="section-subtitle">Examine deliverables side-by-side to make the optimal decision.</p>
+        </div>
+
+        <div class="table-responsive" data-animate style="background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); padding: 20px;">
+          <table class="dash-table">
+            <thead>
+              <tr>
+                <th>Scope Item</th>
+                <th>Brand Sprint</th>
+                <th>Dedicated Pod</th>
+                <th>Enterprise Atelier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lead Creative Team</strong></td>
+                <td>1 Senior Lead</td>
+                <td>Senior Pod of 3</td>
+                <td>Senior Pod of 5 + Strategist</td>
+              </tr>
+              <tr>
+                <td><strong>Figma Screens Included</strong></td>
+                <td>Up to 5 Pages</td>
+                <td>Continuous Backlog</td>
+                <td>Full Enterprise Suite (25+)</td>
+              </tr>
+              <tr>
+                <td><strong>Design Systems & Tokens</strong></td>
+                <td>Core Variable Tokens</td>
+                <td>Advanced Multi-Theme</td>
+                <td>Multi-Brand Global Ecosystem</td>
+              </tr>
+              <tr>
+                <td><strong>Frontend Code Handover</strong></td>
+                <td>HTML5/CSS Ready</td>
+                <td>Complete Web Components</td>
+                <td>Full Headless Micro-Frontend</td>
+              </tr>
+              <tr>
+                <td><strong>Lighthouse Guarantee</strong></td>
+                <td>90+ Performance</td>
+                <td>95+ Performance</td>
+                <td>98+ Performance & WCAG AAA</td>
+              </tr>
+              <tr>
+                <td><strong>Communication Channel</strong></td>
+                <td>Slack Connect + Weekly</td>
+                <td>Direct Slack + Daily Sync</td>
+                <td>Dedicated Slack + Executive Line</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: QUALITY SLA GUARANTEE -->
+    <section class="section section-darker" aria-label="SLA Guarantee">
+      <div class="container text-center" style="max-width: 860px;" data-animate>
+        <span class="badge-pill canyon">Our Commitment</span>
+        <h2 class="section-title">The Stackly Studio Guarantee</h2>
+        <p class="section-subtitle">We hold ourselves accountable to strict operational and creative benchmarks.</p>
+
+        <div class="grid-3" style="margin-top: 48px; text-align: left;">
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; color: var(--color-canyon); margin-bottom: 8px;">Zero Junior Handoff</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">You work exclusively with verified senior practitioners with 8+ years of top-tier agency pedigree.</p>
+          </div>
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; color: var(--color-buttercream); margin-bottom: 8px;">100% IP Transfer</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">All design assets, Figma files, raw 3D meshes, and frontend code become your unencumbered property.</p>
+          </div>
+          <div class="card-glass">
+            <h4 style="font-size: 1.15rem; color: var(--color-morning-sky); margin-bottom: 8px;">Milestone Assurance</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">If any deliverable fails to meet the agreed brief, we revise without billing extra days until aligned.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CLIENT ROI TESTIMONIAL -->
+    <section class="section" aria-label="ROI Review">
+      <div class="container text-center" style="max-width: 820px;" data-animate>
+        <div class="testimonial-avatar" style="width: 76px; height: 76px; margin: 0 auto 20px;">
+          <img src="assets/images/client-david-ross-nexus-founder.webp" alt="David Ross, Founder of Nexus Systems" class="img-preserve-face">
+        </div>
+        <div class="star-rating">★★★★★</div>
+        <p style="font-size: 1.35rem; line-height: 1.6; color: var(--text-primary); font-style: italic; margin-bottom: 24px;">
+          "The Studio Pod retainer model was the highest-ROI investment our company made last year. Having senior design firepower embedded directly into our product sprints saved us over \$180K in recruiting and payroll."
+        </p>
+        <div style="font-weight: 700; font-size: 1.1rem; color: #FFFFFF;">David Ross</div>
+        <div style="font-size: 0.875rem; color: var(--color-morning-sky);">Founder & Chief Architect, Nexus Cloud Systems</div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FREQUENTLY ASKED PRICING INQUIRIES -->
+    <section class="section section-darker" aria-label="Pricing FAQs">
+      <div class="container" style="max-width: 860px;">
+        <div class="section-header text-center" data-animate>
+          <span class="badge-pill buttercream">Financial FAQs</span>
+          <h2 class="section-title">Billing & Engagement Terms</h2>
+          <p class="section-subtitle">Clear explanations of payment terms, retainer cancellations, and invoicing.</p>
+        </div>
+
+        <div class="accordion" data-animate>
+          <div class="accordion-item active">
+            <button class="accordion-header" type="button" aria-expanded="true">
+              <span>What is the payment structure for fixed sprints?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              For fixed-scope sprints, we operate on a 50/50 milestone schedule: 50% deposit upon contract execution to reserve your studio sprint window, and the remaining 50% upon final sign-off and asset handover.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">
+              <span>Can we pause or cancel our Studio Retainer?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              Yes. Retainers operate on a 30-day notice period. You can pause or adjust your pod allocation with a simple 30-day written notification with zero termination penalties.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false">
+              <span>Do you accept payment in international currencies?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="accordion-body">
+              Yes, our studio invoices globally in USD ($), EUR (€), GBP (£), and INR (₹) via secure corporate wire transfers and Stripe Billing.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CONVERSION CTA -->
+    <section class="section" aria-label="Call to Action" style="overflow: hidden; position: relative;">
+      <div class="container text-center" style="position: relative; z-index: 5;" data-animate>
+        <span class="badge-pill canyon">Reserve Capacity</span>
+        <h2 style="font-size: clamp(2.2rem, 4vw, 3.5rem); margin: 20px 0;">
+          Lock In Your Team's <span class="hero-highlight">Next Studio Sprint</span>.
+        </h2>
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 36px; color: var(--text-secondary);">
+          We limit concurrent active client retainers to four brands per pod to ensure extreme quality.
+        </p>
+        <div style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Lock In Sprint Window</a>
+          <a href="portfolio.html" class="btn btn-secondary btn-lg">Review Selected Works</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" title="Stackly Home">
+            <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="footer-logo">
+          </a>
+          <p class="footer-brand-desc">
+            Stackly is an international creative portfolio agency engineering bespoke brand identities, high-fidelity UI/UX products, and memorable interactive systems.
+          </p>
+        </div>
+
+        <!-- Quick Links (Valid Navigation) -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio Disciplines (Redirects to 404 per instructions) -->
+        <div>
+          <h4 class="footer-title">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="404.html" class="footer-link">Brand Architecture</a></li>
+            <li><a href="404.html" class="footer-link">Digital Product UI/UX</a></li>
+            <li><a href="404.html" class="footer-link">Motion & 3D Shaders</a></li>
+            <li><a href="404.html" class="footer-link">Full-Stack Engineering</a></li>
+            <li><a href="404.html" class="footer-link">Design System Tokens</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details & Social Links -->
+        <div>
+          <h4 class="footer-title">Global Studio</h4>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu 636008</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="404.html" class="footer-link">+91 9876543210</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="404.html" class="footer-link">hello@thestackly.com</a>
+          </div>
+
+          <!-- Social media icon + label -->
+          <div class="footer-socials">
+            <a href="404.html" class="footer-social-btn" title="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.89 0-1.61.72-1.61 1.61s.72 1.61 1.61 1.61 1.61-.72 1.61-1.61-.72-1.61-1.61-1.61z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X / Twitter</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="404.html" class="footer-social-btn" title="Dribbble">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path><path d="M21.75 12.84c-6.62-1.41-12.14 1-15.35 6.07"></path></svg>
+              <span>Dribbble</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Creative Agency. All rights reserved. Designed for exceptional human experiences.</div>
+        <div class="footer-legal-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Cookie Preferences</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top of page" title="Scroll to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
