@@ -5,10 +5,11 @@
  * - User display name derived from email (e.g., alex.smith@agency.com -> Alex Smith)
  * - Timezone-aware greeting (Good Morning / Afternoon / Evening)
  * - Displaying Current User Name, Current User Role, Login Status, Last login timestamp, Logged in timestamp
- * - Desktop sidebar collapse/expand toggle with tooltips
+ * - Sidebar collapse: closes sidebar completely so content is fully visible across 100% width
+ * - Topbar sidebar toggle: opens/closes sidebar at will
  * - Mobile full-screen sidebar toggle with background scroll lock
  * - Role-tailored views and statistics (Admin, Manager, Creative Director, Client)
- * - Sidebar tab view switching (Overview, Analytics, Projects, Team, Services, Settings)
+ * - Sidebar tab view switching (Overview, Analytics, Projects, Deliverables, Tokens, Squads, Settings)
  * - Sign Out button clearing session and redirecting to sign-in.html
  * - Redirection of all action buttons to 404.html
  */
@@ -83,38 +84,52 @@ document.addEventListener('DOMContentLoaded', () => {
   if (metaLoggedInEl) metaLoggedInEl.textContent = loggedInTimestamp;
   if (metaLastLoginEl) metaLastLoginEl.textContent = lastLoginTimestamp;
 
-  // 3. SIDEBAR TOGGLE (DESKTOP & MOBILE)
+  // 3. SIDEBAR TOGGLE & COLLAPSE CONTROLS
   const sidebar = document.querySelector('.dashboard-sidebar');
-  const desktopToggleBtn = document.getElementById('sidebar-collapse-btn');
-  const mobileToggleBtn = document.getElementById('mobile-sidebar-toggle');
+  const collapseBtn = document.getElementById('sidebar-collapse-btn');
+  const topbarToggleBtn = document.getElementById('dash-sidebar-toggle');
 
-  if (desktopToggleBtn && sidebar) {
-    desktopToggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      const isCollapsed = sidebar.classList.contains('collapsed');
-      localStorage.setItem('sidebar_collapsed', isCollapsed ? 'true' : 'false');
+  // Collapse Option inside Sidebar: Closes side menu bar and makes content visible
+  if (collapseBtn && sidebar) {
+    collapseBtn.addEventListener('click', () => {
+      if (window.innerWidth <= 1024) {
+        // Mobile / Tablet: Close overlay
+        sidebar.classList.remove('mobile-open');
+        document.body.classList.remove('scroll-locked');
+      } else {
+        // Desktop: Close sidebar completely and expand content
+        sidebar.classList.add('collapsed');
+        localStorage.setItem('sidebar_collapsed', 'true');
+      }
     });
-
-    if (localStorage.getItem('sidebar_collapsed') === 'true' && window.innerWidth > 1024) {
-      sidebar.classList.add('collapsed');
-    }
   }
 
-  if (mobileToggleBtn && sidebar) {
-    mobileToggleBtn.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('mobile-open');
-      document.body.classList.toggle('scroll-locked', isOpen);
+  // Topbar Toggle Button: Opens/Closes the side menu bar
+  if (topbarToggleBtn && sidebar) {
+    topbarToggleBtn.addEventListener('click', () => {
+      if (window.innerWidth <= 1024) {
+        const isOpen = sidebar.classList.toggle('mobile-open');
+        document.body.classList.toggle('scroll-locked', isOpen);
+      } else {
+        const isCollapsed = sidebar.classList.toggle('collapsed');
+        localStorage.setItem('sidebar_collapsed', isCollapsed ? 'true' : 'false');
+      }
     });
 
     // Close on clicking outside on mobile
     document.addEventListener('click', (e) => {
       if (window.innerWidth <= 1024 && sidebar.classList.contains('mobile-open')) {
-        if (!sidebar.contains(e.target) && !mobileToggleBtn.contains(e.target)) {
+        if (!sidebar.contains(e.target) && !topbarToggleBtn.contains(e.target)) {
           sidebar.classList.remove('mobile-open');
           document.body.classList.remove('scroll-locked');
         }
       }
     });
+  }
+
+  // Restore desktop collapsed state if previously set
+  if (localStorage.getItem('sidebar_collapsed') === 'true' && window.innerWidth > 1024 && sidebar) {
+    sidebar.classList.add('collapsed');
   }
 
   // 4. SIGN OUT
@@ -128,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. SIDEBAR TAB VIEW SWITCHING
+  // 5. SIDEBAR TAB VIEW SWITCHING (Each view has 10 rich sections)
   const navTabs = document.querySelectorAll('.dash-nav-tab');
   const tabViews = document.querySelectorAll('.dash-tab-view');
 
@@ -147,14 +162,17 @@ document.addEventListener('DOMContentLoaded', () => {
           view.style.opacity = '0';
           setTimeout(() => {
             view.style.opacity = '1';
-            view.style.transition = 'opacity 0.3s ease';
-          }, 30);
+            view.style.transition = 'opacity 0.25s ease';
+          }, 20);
         } else {
           view.style.display = 'none';
         }
       });
 
-      // Close mobile sidebar if open
+      // Scroll to top of content area
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Close mobile sidebar if open so content is visible
       if (window.innerWidth <= 1024 && sidebar) {
         sidebar.classList.remove('mobile-open');
         document.body.classList.remove('scroll-locked');
@@ -227,4 +245,3 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.setAttribute('href', '404.html');
   });
 });
-

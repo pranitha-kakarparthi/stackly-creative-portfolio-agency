@@ -168,8 +168,10 @@
     </section>
 
     <!-- SECTION 2: INTERACTIVE FILTER TABS -->
-    <section class="section" id="portfolio-gallery" aria-label="Interactive Gallery">
-      <div class="container">
+    <section class="section" id="portfolio-filters" style="padding-bottom: 24px;" aria-label="Interactive Gallery Categories">
+      <div class="container text-center">
+        <span class="badge-pill canyon" style="margin-bottom: 12px;">Curated Portfolio</span>
+        <h2 class="section-title" style="margin-bottom: 24px;">Explore Works By Creative Discipline</h2>
         <div class="filter-tabs" data-animate role="tablist" aria-label="Portfolio Categories">
           <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works (8)</button>
           <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false">Branding (3)</button>
@@ -177,8 +179,12 @@
           <button class="filter-btn" data-filter="motion" role="tab" aria-selected="false">Motion & 3D (1)</button>
           <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">eCommerce (1)</button>
         </div>
+      </div>
+    </section>
 
-        <!-- SECTION 3: 8 UNIQUE PORTFOLIO PROJECTS -->
+    <!-- SECTION 3: 8 UNIQUE PORTFOLIO PROJECTS -->
+    <section class="section" id="portfolio-gallery-grid" style="padding-top: 0;" aria-label="Selected Portfolio Projects">
+      <div class="container">
         <div class="grid-2" data-animate>
           <!-- Item 1: Lumina Studio -->
           <div class="portfolio-item-wrap" data-category="branding">
@@ -468,8 +474,39 @@
       </div>
     </section>
 
-    <!-- SECTION 9: CONVERSION CTA -->
-    <section class="section" aria-label="Call to Action" style="overflow: hidden; position: relative;">
+    <!-- SECTION 9: DESIGN SYSTEM & HEADLESS TOKEN ARCHITECTURE -->
+    <section class="section" aria-label="Design System Showcase">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 48px;">
+          <div data-animate>
+            <span class="badge-pill olive">Living Architecture</span>
+            <h2 class="section-title">Beyond Screens: Robust Token Systems for Longevity.</h2>
+            <p style="font-size: 1.05rem; line-height: 1.65; margin-bottom: 24px; color: var(--text-secondary);">
+              Every showcase in our gallery is supported by headless design tokens synchronized directly between Figma and production repositories, ensuring effortless scalability as your product roadmap grows.
+            </p>
+            <div class="grid-2" style="gap: 16px; margin-bottom: 24px;">
+              <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <div style="font-weight: 700; color: var(--color-canyon); font-size: 1.1rem; margin-bottom: 4px;">Zero Drift</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Continuous automated token compilation across iOS, Android & Web.</div>
+              </div>
+              <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <div style="font-weight: 700; color: var(--color-buttercream); font-size: 1.1rem; margin-bottom: 4px;">WCAG AAA</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Strict programmatic contrast validation built into every color tier.</div>
+              </div>
+            </div>
+            <a href="404.html" class="btn btn-secondary">Inspect Token Specimen (.JSON)</a>
+          </div>
+          <div data-animate>
+            <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
+              <img src="assets/images/design-system-pattern-library.webp" alt="Design system component library and token specifications" style="width: 100%; height: 360px; object-fit: cover; display: block;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: CONVERSION CTA -->
+    <section class="section section-darker" aria-label="Call to Action" style="overflow: hidden; position: relative;">
       <div class="hero-orb hero-orb-1" style="bottom: 10%; right: 20%;"></div>
       <div class="container text-center" style="position: relative; z-index: 5;" data-animate>
         <span class="badge-pill canyon">Your Project Next</span>

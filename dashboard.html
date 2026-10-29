@@ -27,8 +27,9 @@
       <a href="index.html" class="sidebar-brand" title="Stackly Home">
         <img src="assets/images/logoStackly.webp" alt="Stackly Studio" class="sidebar-logo">
       </a>
-      <button type="button" id="sidebar-collapse-btn" class="sidebar-toggle-btn" aria-label="Collapse Sidebar" title="Toggle Sidebar">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      <!-- Collapse button: Closes the side menu bar completely and makes content visible -->
+      <button type="button" id="sidebar-collapse-btn" class="sidebar-toggle-btn" aria-label="Collapse Side Menu Bar" title="Collapse Side Menu Bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
 
@@ -40,7 +41,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
           <span class="sidebar-label">Overview Hub</span>
         </a>
-        <div class="sidebar-tooltip">Overview Hub</div>
       </div>
 
       <div class="sidebar-nav-item">
@@ -48,7 +48,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
           <span class="sidebar-label">Sprint Telemetry</span>
         </a>
-        <div class="sidebar-tooltip">Sprint Telemetry</div>
       </div>
 
       <div class="sidebar-nav-item">
@@ -56,7 +55,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/></svg>
           <span class="sidebar-label">Active Projects</span>
         </a>
-        <div class="sidebar-tooltip">Active Projects</div>
       </div>
 
       <div class="sidebar-category-label">Architecture & Assets</div>
@@ -66,7 +64,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
           <span class="sidebar-label">Deliverables & QA</span>
         </a>
-        <div class="sidebar-tooltip">Deliverables & QA</div>
       </div>
 
       <div class="sidebar-nav-item">
@@ -74,7 +71,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M12 2l-5.5 9h11zM7 14h10l-5 8z"/></svg>
           <span class="sidebar-label">Design Tokens</span>
         </a>
-        <div class="sidebar-tooltip">Design Tokens</div>
       </div>
 
       <div class="sidebar-nav-item">
@@ -82,7 +78,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
           <span class="sidebar-label">Squad Allocation</span>
         </a>
-        <div class="sidebar-tooltip">Squad Allocation</div>
       </div>
 
       <div class="sidebar-category-label">System</div>
@@ -92,7 +87,6 @@
           <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
           <span class="sidebar-label">Portal Preferences</span>
         </a>
-        <div class="sidebar-tooltip">Portal Preferences</div>
       </div>
     </nav>
 
@@ -113,8 +107,10 @@
     <!-- Topbar Navigation -->
     <header class="dashboard-topbar" role="banner">
       <div class="topbar-left">
-        <button type="button" id="mobile-sidebar-toggle" class="mobile-sidebar-toggle" aria-label="Toggle Side Menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <!-- Prominent Toggle Button: Opens and closes the side menu bar across all viewports -->
+        <button type="button" id="dash-sidebar-toggle" class="dash-sidebar-toggle" aria-label="Toggle Side Menu Bar" title="Toggle Side Menu Bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <span>Side Menu</span>
         </button>
 
         <div class="topbar-greeting-wrap">
@@ -124,7 +120,7 @@
       </div>
 
       <div class="topbar-right">
-        <!-- Display Current User Role Badge (Role switcher removed per instructions) -->
+        <!-- Current User Role Badge (Role switcher removed per instructions) -->
         <span id="topbar-role-badge" class="user-badge-role">Creative Lead</span>
 
         <!-- Sign Out Button (Clears session and redirects to sign-in.html) -->
@@ -139,11 +135,11 @@
     <main class="dashboard-content-area" role="main">
 
       <!-- ==========================================
-           TAB VIEW 1: OVERVIEW HUB (DEFAULT VIEW)
+           TAB VIEW 1: OVERVIEW HUB (10 SECTIONS)
            ========================================== -->
       <div id="view-overview" class="dash-tab-view">
 
-        <!-- SECTION 1: AUTHENTICATION & SESSION METADATA BANNER -->
+        <!-- SECTION 1: AUTHENTICATION & SECURITY METADATA BANNER -->
         <div class="card-glass" style="margin-bottom: 28px; border-color: rgba(141, 166, 204, 0.25);">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
             <div>
@@ -169,6 +165,10 @@
               <div>
                 <span style="color: var(--text-muted); display: block; font-size: 0.725rem; text-transform: uppercase;">Logged In:</span>
                 <span id="meta-logged-in-at" style="color: var(--text-secondary);">Just Now</span>
+              </div>
+              <div>
+                <span style="color: var(--text-muted); display: block; font-size: 0.725rem; text-transform: uppercase;">Last Login:</span>
+                <span id="meta-last-login-at" style="color: var(--text-secondary);">Previous Session</span>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@
           </div>
         </div>
 
-        <!-- SECTION 3: CHARTS & TELEMETRY -->
+        <!-- SECTION 3: SPRINT VELOCITY BURN-DOWN CHART -->
         <div class="dash-grid-2">
           <div class="dash-widget">
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -221,7 +221,6 @@
                 <h3 style="font-size: 1.15rem;">Weekly Sprint Velocity & Deliverables</h3>
                 <span style="font-size: 0.8rem; color: var(--text-muted);">Tasks completed across active studio pods</span>
               </div>
-              <!-- Action buttons redirect to 404 per instructions -->
               <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Export Report</a>
             </div>
 
@@ -258,7 +257,7 @@
             </div>
           </div>
 
-          <!-- Quick Sprint Actions -->
+          <!-- SECTION 4: COMMAND ACTIONS PANEL -->
           <div class="dash-widget">
             <h3 style="font-size: 1.15rem;">Quick Command Actions</h3>
             <p style="font-size: 0.85rem; color: var(--text-muted);">Accelerated shortcuts for studio tasks.</p>
@@ -276,11 +275,14 @@
               <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn" style="width: 100%; justify-content: flex-start;">
                 <span>Audit Accessibility VPAT</span>
               </a>
+              <a href="404.html" class="btn btn-olive btn-sm dash-action-btn" style="width: 100%; justify-content: flex-start;">
+                <span>Export Sprints Archive</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- SECTION 4: ACTIVE PROJECTS PIPELINE TABLE -->
+        <!-- SECTION 5: ACTIVE STUDIO PROJECT PIPELINE TABLE -->
         <div class="dash-widget" style="margin-bottom: 28px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
             <div>
@@ -340,8 +342,8 @@
           </div>
         </div>
 
-        <!-- SECTION 5: REAL-TIME STUDIO ACTIVITY FEED -->
-        <div class="dash-widget">
+        <!-- SECTION 6: REAL-TIME STUDIO ACTIVITY FEED -->
+        <div class="dash-widget" style="margin-bottom: 28px;">
           <h3 style="font-size: 1.25rem;">Live Studio Activity Feed</h3>
           <span style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Chronological audit of design tokens, Figma pushes, and approvals</span>
 
@@ -379,41 +381,148 @@
             </div>
           </div>
         </div>
+
+        <!-- SECTION 7: CORE BRAND TOKEN SYNCHRONIZER -->
+        <div class="dash-widget" style="margin-bottom: 28px;">
+          <h3 style="font-size: 1.25rem;">Brand Design Token Hierarchy</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Core color variables currently active across production stylesheets.</p>
+          <div class="grid-4">
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid var(--color-canyon);">
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Canyon Accent</div>
+              <strong style="color: var(--color-canyon); font-size: 1.1rem;">#DF6D41</strong>
+            </div>
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid var(--color-buttercream);">
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Buttercream Gold</div>
+              <strong style="color: var(--color-buttercream); font-size: 1.1rem;">#F7D89A</strong>
+            </div>
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid var(--color-morning-sky);">
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Morning Sky Blue</div>
+              <strong style="color: var(--color-morning-sky); font-size: 1.1rem;">#8DA6CC</strong>
+            </div>
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid var(--color-olive-grove);">
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Olive Grove Green</div>
+              <strong style="color: var(--color-olive-grove); font-size: 1.1rem;">#AAA648</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 8: SENIOR SQUAD ALLOCATION PODS -->
+        <div class="dash-widget" style="margin-bottom: 28px;">
+          <h3 style="font-size: 1.25rem;">Active Studio Pod Leads</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Senior practitioners actively deployed to ongoing client sprints.</p>
+          <div class="grid-4">
+            <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
+              <img src="assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <div>
+                <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Elena Rostova</strong>
+                <span style="font-size: 0.75rem; color: var(--color-buttercream);">Executive Creative Dir</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
+              <img src="assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <div>
+                <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Marcus Vance</strong>
+                <span style="font-size: 0.75rem; color: var(--color-morning-sky);">Principal UI Architect</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
+              <img src="assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <div>
+                <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Liam O'Connor</strong>
+                <span style="font-size: 0.75rem; color: var(--color-canyon);">Motion & 3D Lead</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
+              <img src="assets/images/principal-fullstack-dev-aisha-patel.webp" alt="Aisha Patel" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <div>
+                <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Aisha Patel</strong>
+                <span style="font-size: 0.75rem; color: var(--color-olive-grove);">Full-Stack Architect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 9: UPCOMING MILESTONES & DEADLINES -->
+        <div class="dash-widget" style="margin-bottom: 28px;">
+          <h3 style="font-size: 1.25rem;">Upcoming Sprint Release Calendar</h3>
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--bg-surface); border-radius: var(--radius-md);">
+              <div>
+                <strong>Lumina Studio: WebGL Photometric Shader Release Candidate</strong>
+                <div style="font-size: 0.775rem; color: var(--text-muted);">Sprint Week 4 Milestone</div>
+              </div>
+              <span class="badge-pill canyon">Due Friday, 17:00 IST</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--bg-surface); border-radius: var(--radius-md);">
+              <div>
+                <strong>Nexus Systems: Multi-Theme Contrast VPAT Compliance Sign-Off</strong>
+                <div style="font-size: 0.775rem; color: var(--text-muted);">Accessibility Sprint Milestone</div>
+              </div>
+              <span class="badge-pill buttercream">Due Monday, 12:00 IST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 10: CLIENT PARTNER SATISFACTION TELEMETRY -->
+        <div class="dash-widget">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+            <div>
+              <h3 style="font-size: 1.25rem;">Client Satisfaction Telemetry</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Verified partner feedback across active sprint retrospectives.</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-heading); color: var(--color-buttercream);">4.98</div>
+              <div>
+                <div class="star-rating">★★★★★</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">From 42 Partner Reviews</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- ==========================================
-           TAB VIEW 2: SPRINT TELEMETRY / ANALYTICS
+           TAB VIEW 2: SPRINT TELEMETRY & ANALYTICS (10 SECTIONS)
            ========================================== -->
       <div id="view-analytics" class="dash-tab-view" style="display: none;">
+        <!-- 1. Header -->
         <div class="dash-section-header">
           <div>
-            <h2 class="dash-section-title">Sprint Telemetry & Velocity</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Deep quantitative telemetry on team velocity and burn-down rates.</p>
+            <h2 class="dash-section-title">Sprint Telemetry & Analytics</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Deep quantitative telemetry on team velocity, burndown, and performance benchmarks.</p>
           </div>
-          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Download CSV</a>
+          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Export Raw CSV</a>
         </div>
 
-        <div class="grid-3" style="margin-bottom: 28px;">
+        <!-- 2. Core Velocity KPIs -->
+        <div class="grid-4" style="margin-bottom: 24px;">
           <div class="kpi-card">
-            <span class="kpi-title">Average Cycle Time</span>
+            <span class="kpi-title">Cycle Time</span>
             <div class="kpi-value" style="color: var(--color-buttercream);">3.2 Days</div>
             <div class="kpi-delta">↓ 18% improvement</div>
           </div>
           <div class="kpi-card">
-            <span class="kpi-title">Defect Escape Rate</span>
+            <span class="kpi-title">Defect Escape</span>
             <div class="kpi-value" style="color: var(--color-olive-grove);">0.02%</div>
-            <div class="kpi-delta">Industry benchmark: 1.5%</div>
+            <div class="kpi-delta">Benchmark: 1.5%</div>
           </div>
           <div class="kpi-card">
-            <span class="kpi-title">Weekly Story Points</span>
+            <span class="kpi-title">Weekly Points</span>
             <div class="kpi-value" style="color: var(--color-canyon);">128 pts</div>
             <div class="kpi-delta">100% committed delivered</div>
           </div>
+          <div class="kpi-card">
+            <span class="kpi-title">Velocity Index</span>
+            <div class="kpi-value" style="color: var(--color-morning-sky);">98.4%</div>
+            <div class="kpi-delta">↑ 4.2% QoQ</div>
+          </div>
         </div>
 
-        <div class="dash-widget">
-          <h3 style="font-size: 1.15rem;">Performance Telemetry Breakdown</h3>
-          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 18px;">All applications tested in continuous CI pipeline.</p>
+        <!-- 3. Core Web Vitals Gauge Panel -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Core Web Vitals Telemetry</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 18px;">All deployed templates continuously tested in automated headless Chromium.</p>
           <div style="display: flex; flex-direction: column; gap: 14px;">
             <div>
               <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px;">
@@ -421,7 +530,7 @@
                 <strong style="color: var(--color-olive-grove);">0.4s (Pass)</strong>
               </div>
               <div style="height: 6px; background: var(--bg-surface); border-radius: var(--radius-full); overflow: hidden;">
-                <div style="width: 95%; height: 100%; background: var(--color-olive-grove);"></div>
+                <div style="width: 96%; height: 100%; background: var(--color-olive-grove);"></div>
               </div>
             </div>
             <div>
@@ -436,7 +545,7 @@
             <div>
               <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px;">
                 <span>Cumulative Layout Shift (CLS)</span>
-                <strong style="color: var(--color-olive-grove);">0.000 (Flawless)</strong>
+                <strong style="color: var(--color-olive-grove);">0.000 (Zero Shift)</strong>
               </div>
               <div style="height: 6px; background: var(--bg-surface); border-radius: var(--radius-full); overflow: hidden;">
                 <div style="width: 100%; height: 100%; background: var(--color-olive-grove);"></div>
@@ -444,24 +553,115 @@
             </div>
           </div>
         </div>
+
+        <!-- 4. Interactive Burndown Progression Chart -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Burndown Trend Line</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Committed story points (ideal) vs actual burndown progression.</p>
+          <div class="chart-container" style="height: 180px;">
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 100%;"></div><span class="chart-label">Day 1</span></div>
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 82%;"></div><span class="chart-label">Day 2</span></div>
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 64%;"></div><span class="chart-label">Day 3</span></div>
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 48%;"></div><span class="chart-label">Day 4</span></div>
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 30%;"></div><span class="chart-label">Day 5</span></div>
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 12%;"></div><span class="chart-label">Day 6</span></div>
+            <div class="chart-bar-wrap"><div class="chart-bar" style="height: 2%;"></div><span class="chart-label">Day 7</span></div>
+          </div>
+        </div>
+
+        <!-- 5. Viewport Resolution Distribution -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Viewport Telemetry Distribution</h3>
+          <div class="grid-4" style="margin-top: 14px;">
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md);">
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Small Mobile (320-375px)</span>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-canyon);">28.4%</div>
+            </div>
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md);">
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Large Mobile (425px)</span>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-buttercream);">22.1%</div>
+            </div>
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md);">
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Tablet (768-1024px)</span>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-morning-sky);">18.2%</div>
+            </div>
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md);">
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Desktop (1440px+)</span>
+              <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-olive-grove);">31.3%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Accessibility Compliance Radar -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">WCAG AA Verification Score</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Automated verification checks: 100% compliant across all elements.</p>
+        </div>
+
+        <!-- 7. Production Bundle Metrics -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Asset Weight Distribution</h3>
+          <div style="display: flex; gap: 24px; font-size: 0.9rem;">
+            <div>CSS Asset: <strong>26 KB</strong></div>
+            <div>JavaScript Engine: <strong>32 KB</strong></div>
+            <div>All WebP Images: <strong>&lt; 100 KB each</strong></div>
+          </div>
+        </div>
+
+        <!-- 8. Sprint Stage Lead Time Table -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Phase Turnaround Benchmarks</h3>
+          <div class="table-responsive">
+            <table class="dash-table">
+              <thead><tr><th>Phase</th><th>Avg Time</th><th>Efficiency</th></tr></thead>
+              <tbody>
+                <tr><td>Discovery</td><td>2.1 Days</td><td>+14% vs benchmark</td></tr>
+                <tr><td>UI Wireframes</td><td>3.4 Days</td><td>+22% vs benchmark</td></tr>
+                <tr><td>Frontend Code</td><td>4.1 Days</td><td>+19% vs benchmark</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 9. Quarterly Velocity Trends -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Quarterly Velocity Growth</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Year-to-date velocity expanded by +38% through tokenized design systems.</p>
+        </div>
+
+        <!-- 10. Automated Bug & Error Telemetry -->
+        <div class="dash-widget">
+          <h3 style="font-size: 1.15rem;">Automated Error Telemetry Log</h3>
+          <span class="badge-pill olive" style="align-self: flex-start;">0 Active Critical Defects</span>
+        </div>
       </div>
 
       <!-- ==========================================
-           TAB VIEW 3: ACTIVE PROJECTS
+           TAB VIEW 3: ACTIVE PROJECTS (10 SECTIONS)
            ========================================== -->
       <div id="view-projects" class="dash-tab-view" style="display: none;">
+        <!-- 1. Header -->
         <div class="dash-section-header">
           <div>
             <h2 class="dash-section-title">Active Projects Board</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Kanban board overview of ongoing partner initiatives.</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Kanban board and delivery overview for all active client initiatives.</p>
           </div>
-          <a href="404.html" class="btn btn-primary btn-sm dash-action-btn">+ New Project Scope</a>
+          <a href="404.html" class="btn btn-primary btn-sm dash-action-btn">+ Initialize New Project</a>
         </div>
 
-        <div class="grid-2">
+        <!-- 2. Portfolio Summary Cards -->
+        <div class="grid-4" style="margin-bottom: 24px;">
+          <div class="kpi-card"><span class="kpi-title">Active Projects</span><div class="kpi-value">8</div></div>
+          <div class="kpi-card"><span class="kpi-title">Sprint Budget</span><div class="kpi-value" style="color: var(--color-buttercream);">78%</div></div>
+          <div class="kpi-card"><span class="kpi-title">In Review</span><div class="kpi-value" style="color: var(--color-morning-sky);">3</div></div>
+          <div class="kpi-card"><span class="kpi-title">Team Capacity</span><div class="kpi-value" style="color: var(--color-olive-grove);">92%</div></div>
+        </div>
+
+        <!-- 3. Interactive Project Cards Grid -->
+        <div class="grid-2" style="margin-bottom: 24px;">
           <div class="card-glass">
-            <span class="badge-pill canyon" style="margin-bottom: 12px;">Sprint 04 • In Progress</span>
-            <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Lumina Studio Architecture</h3>
+            <span class="badge-pill canyon" style="margin-bottom: 12px;">Brand & WebGL • Week 4</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Lumina Studio Architectural Overhaul</h3>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Complete WebGL product configurator and architectural brand guidelines.</p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
               <span style="font-size: 0.8rem; color: var(--text-muted);">Lead: Elena Rostova</span>
@@ -470,8 +670,8 @@
           </div>
 
           <div class="card-glass">
-            <span class="badge-pill morning-sky" style="margin-bottom: 12px;">Sprint 08 • In Progress</span>
-            <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Nexus Institutional Workstation</h3>
+            <span class="badge-pill morning-sky" style="margin-bottom: 12px;">FinTech SaaS • Week 8</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Nexus Institutional Trading Workstation</h3>
             <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Zero-latency trading telemetry UI and multi-theme accessibility system.</p>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
               <span style="font-size: 0.8rem; color: var(--text-muted);">Lead: Marcus Vance</span>
@@ -479,64 +679,138 @@
             </div>
           </div>
         </div>
+
+        <!-- 4. Visual Gantt Timeline -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Gantt Milestone Schedule</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Q4 Sprint deliverables across active engineering tracks.</p>
+        </div>
+
+        <!-- 5. Scope Checklist -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Sprint Scope Checklist</h3>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem;">
+            <div>☑ Wireframes approved by Client Principal</div>
+            <div>☑ Design tokens exported to JSON</div>
+            <div>☑ Responsive 320px mobile viewport validated</div>
+          </div>
+        </div>
+
+        <!-- 6. Project Risk & Dependency Matrix -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Risk & Dependency Log</h3>
+          <span class="badge-pill olive">All external APIs green</span>
+        </div>
+
+        <!-- 7. Story Points Tracking -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Points Allocated vs Burned</h3>
+          <div style="font-size: 1.5rem; font-weight: 700;">128 / 130 pts Burned</div>
+        </div>
+
+        <!-- 8. Figma Directory -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Figma Design Source Links</h3>
+          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn" style="align-self: flex-start;">Open Figma Enterprise Team Space</a>
+        </div>
+
+        <!-- 9. Client Iteration Changelog -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Revision Changelog v2.4</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Updated button hover transitions and added KaTeX math support.</div>
+        </div>
+
+        <!-- 10. Completed Retrospectives -->
+        <div class="dash-widget">
+          <h3 style="font-size: 1.15rem;">Sprint Retrospective Highlights</h3>
+          <div style="font-size: 0.85rem; color: var(--color-buttercream);">"Flawless handoff; zero downtime upon deployment."</div>
+        </div>
       </div>
 
       <!-- ==========================================
-           TAB VIEW 4: DELIVERABLES & QA
+           TAB VIEW 4: DELIVERABLES & QA (10 SECTIONS)
            ========================================== -->
       <div id="view-deliverables" class="dash-tab-view" style="display: none;">
+        <!-- 1. Header -->
         <div class="dash-section-header">
           <div>
             <h2 class="dash-section-title">Deliverables & QA Sign-Off</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Review verified artifacts and inspect asset handovers.</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Inspect production assets, review checksums, and approve milestones.</p>
           </div>
-          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Export All Assets</a>
+          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Export All Assets (.ZIP)</a>
         </div>
 
-        <div class="dash-widget">
+        <!-- 2. QA Metric Cards -->
+        <div class="grid-4" style="margin-bottom: 24px;">
+          <div class="kpi-card"><span class="kpi-title">Verified Assets</span><div class="kpi-value">136</div></div>
+          <div class="kpi-card"><span class="kpi-title">Pending QA</span><div class="kpi-value" style="color: var(--color-buttercream);">6</div></div>
+          <div class="kpi-card"><span class="kpi-title">Defect Escape</span><div class="kpi-value" style="color: var(--color-olive-grove);">0.00%</div></div>
+          <div class="kpi-card"><span class="kpi-title">Turnaround</span><div class="kpi-value" style="color: var(--color-morning-sky);">14 hrs</div></div>
+        </div>
+
+        <!-- 3. Master Artifact Table -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Master Artifact Inspection</h3>
           <div class="table-responsive">
             <table class="dash-table">
-              <thead>
-                <tr>
-                  <th>Artifact Identifier</th>
-                  <th>Format</th>
-                  <th>Verification</th>
-                  <th>Signed By</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
+              <thead><tr><th>Artifact</th><th>Format</th><th>Status</th><th>Action</th></tr></thead>
               <tbody>
-                <tr>
-                  <td><strong>Lumina-Master-Brandmark.svg</strong></td>
-                  <td>SVG Vector</td>
-                  <td><span class="badge-pill olive" style="padding: 2px 8px; font-size: 0.75rem;">Verified</span></td>
-                  <td>Elena Rostova</td>
-                  <td><a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Download</a></td>
-                </tr>
-                <tr>
-                  <td><strong>Nexus-Tokens-v2.json</strong></td>
-                  <td>JSON Tokens</td>
-                  <td><span class="badge-pill olive" style="padding: 2px 8px; font-size: 0.75rem;">Verified</span></td>
-                  <td>Marcus Vance</td>
-                  <td><a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Download</a></td>
-                </tr>
-                <tr>
-                  <td><strong>Aurora-Checkout-Spec.pdf</strong></td>
-                  <td>Documentation</td>
-                  <td><span class="badge-pill buttercream" style="padding: 2px 8px; font-size: 0.75rem;">Under Review</span></td>
-                  <td>Aisha Patel</td>
-                  <td><a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Download</a></td>
-                </tr>
+                <tr><td>Lumina-Brandmark-Master.svg</td><td>SVG Vector</td><td><span class="badge-pill olive">Verified</span></td><td><a href="404.html" class="dash-action-btn">Download</a></td></tr>
+                <tr><td>Stackly-Design-Tokens.json</td><td>JSON</td><td><span class="badge-pill olive">Verified</span></td><td><a href="404.html" class="dash-action-btn">Download</a></td></tr>
+                <tr><td>Nexus-Workstation-UI.fig</td><td>Figma File</td><td><span class="badge-pill olive">Verified</span></td><td><a href="404.html" class="dash-action-btn">Download</a></td></tr>
               </tbody>
             </table>
           </div>
         </div>
+
+        <!-- 4. Cross-Browser Matrix -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Cross-Browser Test Suite</h3>
+          <div style="font-size: 0.85rem; color: var(--color-olive-grove);">✓ Chrome 120+, Safari 17+, Firefox, Edge All 100% Passed.</div>
+        </div>
+
+        <!-- 5. Visual Regression Suite -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Visual Regression Testing</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">0 sub-pixel discrepancies across all 320px to 4K test viewports.</div>
+        </div>
+
+        <!-- 6. File Weight Audit -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Raster & WebP Image Optimization</h3>
+          <div style="font-size: 0.85rem; color: var(--color-olive-grove);">All 39 downloaded images strictly &lt; 100 KB.</div>
+        </div>
+
+        <!-- 7. Accessibility Report -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">WCAG AA Audit Scorecard</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Full screen-reader compatibility and keyboard focus states passing.</div>
+        </div>
+
+        <!-- 8. Client Sign-Off Status -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Digital Signature Records</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Cryptographically signed and archived in local session history.</div>
+        </div>
+
+        <!-- 9. Deployment Packages -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Production Release Archives</h3>
+          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn" style="align-self: flex-start;">Download Release Build</a>
+        </div>
+
+        <!-- 10. Issue Resolution Tracker -->
+        <div class="dash-widget">
+          <h3 style="font-size: 1.15rem;">Zero Open Defects Log</h3>
+          <div style="font-size: 0.85rem; color: var(--color-olive-grove);">All tickets resolved and verified.</div>
+        </div>
       </div>
 
       <!-- ==========================================
-           TAB VIEW 5: DESIGN TOKENS MATRIX
+           TAB VIEW 5: DESIGN TOKENS MATRIX (10 SECTIONS)
            ========================================== -->
       <div id="view-tokens" class="dash-tab-view" style="display: none;">
+        <!-- 1. Header -->
         <div class="dash-section-header">
           <div>
             <h2 class="dash-section-title">Design Token Synchronizer</h2>
@@ -545,7 +819,16 @@
           <a href="404.html" class="btn btn-primary btn-sm dash-action-btn">Push To Git Repository</a>
         </div>
 
-        <div class="grid-4" style="margin-bottom: 28px;">
+        <!-- 2. Token Health Metrics -->
+        <div class="grid-4" style="margin-bottom: 24px;">
+          <div class="kpi-card"><span class="kpi-title">Token Count</span><div class="kpi-value">128</div></div>
+          <div class="kpi-card"><span class="kpi-title">Coverage</span><div class="kpi-value" style="color: var(--color-olive-grove);">100%</div></div>
+          <div class="kpi-card"><span class="kpi-title">Sync Drift</span><div class="kpi-value" style="color: var(--color-morning-sky);">0%</div></div>
+          <div class="kpi-card"><span class="kpi-title">Platforms</span><div class="kpi-value" style="color: var(--color-buttercream);">4</div></div>
+        </div>
+
+        <!-- 3. Primary Brand Palette Tokens -->
+        <div class="grid-4" style="margin-bottom: 24px;">
           <div class="card-glass" style="border-top: 4px solid var(--color-canyon);">
             <div style="font-size: 0.8rem; color: var(--text-muted);">Token: color.canyon</div>
             <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-canyon); margin: 6px 0;">#DF6D41</div>
@@ -567,76 +850,173 @@
             <div style="font-size: 0.8rem; color: var(--text-muted);">Earthy Accent Status</div>
           </div>
         </div>
+
+        <!-- 4. Surface Elevation Tokens -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Surface & Background Tokens</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);"><code>--bg-primary: #0B0E14</code> • <code>--bg-secondary: #121721</code> • <code>--bg-surface: #18202C</code></div>
+        </div>
+
+        <!-- 5. Typographic Tokens -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Typographic Scale Tokens</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Heading font: <strong>Syne</strong> • Body font: <strong>Plus Jakarta Sans</strong></div>
+        </div>
+
+        <!-- 6. Spacing Tokens -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Spatial Tokens Grid</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px, 96px</div>
+        </div>
+
+        <!-- 7. Radius Tokens -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Radius & Border Tokens</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);"><code>--radius-sm: 8px</code> • <code>--radius-md: 14px</code> • <code>--radius-lg: 22px</code> • <code>--radius-full: 9999px</code></div>
+        </div>
+
+        <!-- 8. Motion Physics Tokens -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Transition & Physics Tokens</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);"><code>--transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1)</code></div>
+        </div>
+
+        <!-- 9. Multi-Platform Export Pipelines -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Platform Export Pipelines</h3>
+          <div style="font-size: 0.85rem; color: var(--color-morning-sky);">Exporting to CSS Variables, SCSS, Swift iOS Structs, and Android XML.</div>
+        </div>
+
+        <!-- 10. Token Versioning Changelog -->
+        <div class="dash-widget">
+          <h3 style="font-size: 1.15rem;">Token Changelog v2.4.0</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Added Buttercream glow variables and high-contrast accessible states.</div>
+        </div>
       </div>
 
       <!-- ==========================================
-           TAB VIEW 6: SQUAD ALLOCATION
+           TAB VIEW 6: SQUAD ALLOCATION (10 SECTIONS)
            ========================================== -->
       <div id="view-team" class="dash-tab-view" style="display: none;">
+        <!-- 1. Header -->
         <div class="dash-section-header">
           <div>
             <h2 class="dash-section-title">Dedicated Squad Pods</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Real-time availability and sprint allocation for creative leads.</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Real-time availability and sprint allocation for senior creative practitioners.</p>
           </div>
-          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Request Staffing Change</a>
+          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn">Request Staffing Adjustment</a>
         </div>
 
-        <div class="grid-3">
+        <!-- 2. Capacity Metrics -->
+        <div class="grid-4" style="margin-bottom: 24px;">
+          <div class="kpi-card"><span class="kpi-title">Active Pods</span><div class="kpi-value">4</div></div>
+          <div class="kpi-card"><span class="kpi-title">Team Utilization</span><div class="kpi-value" style="color: var(--color-olive-grove);">91.4%</div></div>
+          <div class="kpi-card"><span class="kpi-title">Available Hours</span><div class="kpi-value" style="color: var(--color-buttercream);">42 hrs</div></div>
+          <div class="kpi-card"><span class="kpi-title">Senior Leads</span><div class="kpi-value" style="color: var(--color-morning-sky);">8</div></div>
+        </div>
+
+        <!-- 3. Creative Leads Grid -->
+        <div class="grid-3" style="margin-bottom: 24px;">
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <div class="testimonial-avatar" style="width: 52px; height: 52px;">
-                <img src="assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" class="img-preserve-face">
-              </div>
-              <div>
-                <strong style="font-size: 1rem; color: #FFFFFF;">Elena Rostova</strong>
-                <div style="font-size: 0.8rem; color: var(--color-buttercream);">Executive Creative Director</div>
-              </div>
+              <img src="assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
+              <div><strong style="color: #FFFFFF;">Elena Rostova</strong><div style="font-size: 0.8rem; color: var(--color-buttercream);">Executive Creative Director</div></div>
             </div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Lumina Lighting Brand Sprint • 92% Utilization</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Lumina Lighting Sprint • 92% Utilization</div>
           </div>
 
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <div class="testimonial-avatar" style="width: 52px; height: 52px;">
-                <img src="assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" class="img-preserve-face">
-              </div>
-              <div>
-                <strong style="font-size: 1rem; color: #FFFFFF;">Marcus Vance</strong>
-                <div style="font-size: 0.8rem; color: var(--color-morning-sky);">Principal UI Architect</div>
-              </div>
+              <img src="assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
+              <div><strong style="color: #FFFFFF;">Marcus Vance</strong><div style="font-size: 0.8rem; color: var(--color-morning-sky);">Principal UI Architect</div></div>
             </div>
             <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Nexus FinTech Workstation • 94% Utilization</div>
           </div>
 
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <div class="testimonial-avatar" style="width: 52px; height: 52px;">
-                <img src="assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" class="img-preserve-face">
-              </div>
-              <div>
-                <strong style="font-size: 1rem; color: #FFFFFF;">Liam O'Connor</strong>
-                <div style="font-size: 0.8rem; color: var(--color-canyon);">Director of Motion & 3D</div>
-              </div>
+              <img src="assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
+              <div><strong style="color: #FFFFFF;">Liam O'Connor</strong><div style="font-size: 0.8rem; color: var(--color-canyon);">Director of Motion & 3D</div></div>
             </div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Hyperion Acoustics 3D Hardware • 88% Utilization</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Hyperion Acoustics 3D • 88% Utilization</div>
           </div>
+        </div>
+
+        <!-- 4. Engineering & Research Profiles -->
+        <div class="grid-2" style="margin-bottom: 24px;">
+          <div class="card-glass">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <img src="assets/images/principal-fullstack-dev-aisha-patel.webp" alt="Aisha Patel" style="width: 48px; height: 48px; border-radius: 50%;" class="img-preserve-face">
+              <div><strong style="color: #FFFFFF;">Aisha Patel</strong><div style="font-size: 0.8rem; color: var(--color-olive-grove);">Principal Full-Stack Architect</div></div>
+            </div>
+          </div>
+          <div class="card-glass">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <img src="assets/images/ux-research-lead-daniel-kim.webp" alt="Daniel Kim" style="width: 48px; height: 48px; border-radius: 50%;" class="img-preserve-face">
+              <div><strong style="color: #FFFFFF;">Daniel Kim</strong><div style="font-size: 0.8rem; color: var(--color-buttercream);">Director of UX Research</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 3-Person Pod Structure Matrix -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Agile Pod Breakdown</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Pods Alpha, Beta, Gamma, and Delta structured for zero-bureaucracy delivery.</div>
+        </div>
+
+        <!-- 6. Timezone Coverage Matrix -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Timezone Overlap Schedule</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">IST (Salem HQ) • CET (European Satellites) • EST (North America)</div>
+        </div>
+
+        <!-- 7. Multidisciplinary Skill Matrix -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Specialization Ratings</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Brand Identity: 98% • UI/UX: 99% • WebGL Shaders: 94% • WCAG AA: 100%</div>
+        </div>
+
+        <!-- 8. Active Assignments Table -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Weekly Lead Assignments</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">All active sprint tracks fully staffed with dedicated practitioners.</div>
+        </div>
+
+        <!-- 9. Friday Charette Lab Experiments -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Charette Lab R&D</h3>
+          <div style="font-size: 0.85rem; color: var(--color-buttercream);">Exploring WebGL spatial shadows and tactile hover micro-physics.</div>
+        </div>
+
+        <!-- 10. Open Seats in Studio -->
+        <div class="dash-widget">
+          <h3 style="font-size: 1.15rem;">Recruitment & Talent Pipeline</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Actively reviewing candidates for Senior 3D Shader Artist.</div>
         </div>
       </div>
 
       <!-- ==========================================
-           TAB VIEW 7: PORTAL SETTINGS
+           TAB VIEW 7: PORTAL SETTINGS (10 SECTIONS)
            ========================================== -->
       <div id="view-settings" class="dash-tab-view" style="display: none;">
+        <!-- 1. Header -->
         <div class="dash-section-header">
           <div>
-            <h2 class="dash-section-title">Portal Preferences & Integration</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Manage notification hooks, Slack integrations, and credentials.</p>
+            <h2 class="dash-section-title">Portal Preferences & Settings</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Manage webhooks, notifications, security protocols, and appearance.</p>
           </div>
           <a href="404.html" class="btn btn-primary btn-sm dash-action-btn">Save Changes</a>
         </div>
 
-        <div class="card-glass" style="max-width: 640px;">
-          <h4 style="margin-bottom: 16px;">Notification Webhooks</h4>
+        <!-- 2. User Profile Management -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">User Profile & Identity</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Display name derived automatically from verified business email.</p>
+        </div>
+
+        <!-- 3. Notification Webhooks -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Webhook Integrations</h3>
           <div class="form-check">
             <input type="checkbox" id="pref-slack" class="form-check-input" checked>
             <label for="pref-slack" class="form-check-label">Send instant Figma token updates to Slack #design-sprint channel</label>
@@ -650,6 +1030,48 @@
             <label for="pref-qa" class="form-check-label">Alert on any automated Lighthouse regression under 95 score</label>
           </div>
         </div>
+
+        <!-- 4. Daily Digest Settings -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Automated Digest Cadence</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Scheduled daily at 08:30 IST to active stakeholder list.</div>
+        </div>
+
+        <!-- 5. Automated CI/CD Thresholds -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Lighthouse & Quality Thresholds</h3>
+          <div style="font-size: 0.85rem; color: var(--color-olive-grove);">Minimum acceptable performance score: 95.</div>
+        </div>
+
+        <!-- 6. Appearance & Canvas Themes -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Studio Theme Settings</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Default dark canvas active with WCAG AAA contrast enabled.</div>
+        </div>
+
+        <!-- 7. Security Protocols -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">SSL 256-Bit Cryptography</h3>
+          <div style="font-size: 0.85rem; color: var(--color-olive-grove);">All frontend state securely persisted in local encrypted storage.</div>
+        </div>
+
+        <!-- 8. API Keys & Figma Plugin Credentials -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Figma REST API Token</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Token: <code>stk_live_************************</code></div>
+        </div>
+
+        <!-- 9. Data Backup & Cache Manager -->
+        <div class="dash-widget" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.15rem;">Local Session Cache</h3>
+          <a href="404.html" class="btn btn-secondary btn-sm dash-action-btn" style="align-self: flex-start;">Export Local Cache (.JSON)</a>
+        </div>
+
+        <!-- 10. Security Audit Log -->
+        <div class="dash-widget">
+          <h3 style="font-size: 1.15rem;">Device & Session Audit</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Current active session verified. Zero unauthorized attempts recorded.</div>
+        </div>
       </div>
 
     </main>
@@ -659,4 +1081,3 @@
   <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
-

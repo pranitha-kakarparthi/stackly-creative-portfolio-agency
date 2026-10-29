@@ -1,7 +1,9 @@
 /* ==========================================================================
    STACKLY CREATIVE AGENCY - DASHBOARD PORTAL STYLES
-   - Sidebar: Collapsible on desktop, full-width overlay on mobile with collapse toggle
-   - Tooltips on collapsed sidebar items
+   - Full responsive layout
+   - Sidebar collapse closes sidebar completely and expands content to 100% width
+   - Topbar toggle button to open/close sidebar at will
+   - Tooltips on nav items
    - Role-adapted sections & views
    - Action buttons redirecting to 404
    ========================================================================== */
@@ -12,6 +14,7 @@
   background-color: var(--bg-primary);
   color: var(--text-primary);
   overflow-x: hidden;
+  position: relative;
 }
 
 /* Sidebar Styling */
@@ -26,23 +29,32 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
-  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
   overflow-y: auto;
   overflow-x: hidden;
+  box-shadow: 4px 0 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Collapsed Sidebar on Desktop */
+/* When Collapsed/Closed: Sidebar slides off-screen and content expands to 100% width */
 .dashboard-sidebar.collapsed {
-  width: 82px;
+  transform: translateX(-100%) !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dashboard-sidebar.collapsed ~ .dashboard-main {
+  margin-left: 0 !important;
+  width: 100% !important;
 }
 
 .sidebar-header {
-  padding: 24px 20px;
+  padding: 20px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-subtle);
   min-height: var(--header-height);
+  background: rgba(14, 18, 26, 0.6);
 }
 
 .sidebar-brand {
@@ -54,14 +66,15 @@
 }
 
 .sidebar-logo {
-  height: 36px;
+  height: 34px;
   width: auto;
   flex-shrink: 0;
 }
 
+/* Collapse button inside sidebar header */
 .sidebar-toggle-btn {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--radius-sm);
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -76,34 +89,26 @@
 
 .sidebar-toggle-btn:hover {
   background: var(--color-canyon);
+  border-color: var(--color-canyon);
   color: #FFFFFF;
 }
 
 .sidebar-nav {
-  padding: 24px 14px;
+  padding: 20px 14px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   flex: 1;
 }
 
 .sidebar-category-label {
-  font-size: 0.75rem;
+  font-size: 0.725rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);
-  padding: 12px 14px 6px;
+  padding: 14px 14px 6px;
   white-space: nowrap;
-  transition: opacity 0.2s;
-}
-
-.dashboard-sidebar.collapsed .sidebar-category-label {
-  opacity: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
 }
 
 /* Sidebar Nav Items with Tooltip support */
@@ -114,22 +119,22 @@
 .sidebar-nav-link {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 12px 16px;
+  gap: 12px;
+  padding: 11px 14px;
   border-radius: var(--radius-md);
   color: var(--text-secondary);
-  font-size: 0.925rem;
+  font-size: 0.9rem;
   font-weight: 600;
   transition: all var(--transition-fast);
   white-space: nowrap;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
-.sidebar-nav-link:hover,
-.sidebar-nav-link.active {
-  background: rgba(223, 109, 65, 0.12);
-  color: #FFFFFF;
-  border: 1px solid rgba(223, 109, 65, 0.3);
+.sidebar-nav-link:hover {
+  background: rgba(141, 166, 204, 0.1);
+  color: var(--color-buttercream);
+  border-color: rgba(141, 166, 204, 0.2);
 }
 
 .sidebar-nav-link.active {
@@ -140,8 +145,8 @@
 }
 
 .sidebar-icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   fill: currentColor;
 }
@@ -150,46 +155,11 @@
   transition: opacity 0.2s;
 }
 
-.dashboard-sidebar.collapsed .sidebar-label {
-  opacity: 0;
-  display: none;
-}
-
-/* Styled Tooltips for Collapsed Sidebar Items */
-.sidebar-tooltip {
-  display: none;
-}
-
-.dashboard-sidebar.collapsed .sidebar-nav-item:hover .sidebar-tooltip {
-  display: block;
-  position: absolute;
-  left: calc(100% + 14px);
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-medium);
-  color: #FFFFFF;
-  padding: 6px 12px;
-  font-size: 0.825rem;
-  font-weight: 600;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  box-shadow: var(--shadow-md);
-  z-index: 1050;
-  pointer-events: none;
-  animation: tooltipFade 0.2s ease;
-}
-
-@keyframes tooltipFade {
-  from { opacity: 0; transform: translateY(-50%) translateX(-6px); }
-  to { opacity: 1; transform: translateY(-50%) translateX(0); }
-}
-
 /* Sidebar Footer / User Profile snippet */
 .sidebar-footer {
-  padding: 18px 16px;
+  padding: 16px;
   border-top: 1px solid var(--border-subtle);
-  background: rgba(14, 18, 26, 0.5);
+  background: rgba(14, 18, 26, 0.6);
 }
 
 .sidebar-user-card {
@@ -200,8 +170,8 @@
 }
 
 .sidebar-user-avatar {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--color-canyon);
   color: #FFFFFF;
@@ -209,7 +179,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.95rem;
   flex-shrink: 0;
   border: 2px solid var(--color-buttercream);
 }
@@ -218,15 +188,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: opacity 0.2s;
-}
-
-.dashboard-sidebar.collapsed .sidebar-user-info {
-  display: none;
 }
 
 .sidebar-user-name {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-primary);
   white-space: nowrap;
@@ -235,7 +200,7 @@
 }
 
 .sidebar-user-role {
-  font-size: 0.75rem;
+  font-size: 0.725rem;
   color: var(--color-buttercream);
   font-weight: 500;
   text-transform: capitalize;
@@ -249,23 +214,21 @@
   display: flex;
   flex-direction: column;
   background-color: var(--bg-primary);
-  transition: margin-left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.dashboard-sidebar.collapsed ~ .dashboard-main {
-  margin-left: 82px;
+  transition: margin-left 0.35s cubic-bezier(0.16, 1, 0.3, 1), width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  width: calc(100% - 270px);
 }
 
 /* Dashboard Top Navigation Bar */
 .dashboard-topbar {
   height: var(--header-height);
-  background: rgba(11, 14, 20, 0.85);
+  background: rgba(11, 14, 20, 0.88);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
+  padding: 0 28px;
   position: sticky;
   top: 0;
   z-index: 900;
@@ -277,17 +240,31 @@
   gap: 16px;
 }
 
-.mobile-sidebar-toggle {
-  display: none;
+/* Prominent Topbar Toggle Button (Desktop & Mobile) */
+.dash-sidebar-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   color: var(--text-primary);
-  width: 40px;
-  height: 40px;
+  padding: 8px 14px;
   border-radius: var(--radius-sm);
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.dash-sidebar-toggle:hover {
+  background: var(--color-canyon);
+  border-color: var(--color-canyon);
+  color: #FFFFFF;
+}
+
+.dash-sidebar-toggle svg {
+  width: 18px;
+  height: 18px;
 }
 
 .topbar-greeting-wrap {
@@ -354,6 +331,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .dash-section-title {
@@ -559,15 +538,14 @@
   }
 
   .dashboard-sidebar.mobile-open {
-    transform: translateX(0);
+    transform: translateX(0) !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
   }
 
   .dashboard-main {
     margin-left: 0 !important;
-  }
-
-  .mobile-sidebar-toggle {
-    display: flex;
+    width: 100% !important;
   }
 
   .kpi-grid {
@@ -585,11 +563,10 @@
   }
 
   .dashboard-topbar {
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
   .dashboard-content-area {
-    padding: 20px 16px;
+    padding: 20px 14px;
   }
 }
-
