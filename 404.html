@@ -67,19 +67,51 @@
       max-width: 680px;
       width: 100%;
       text-align: center;
-      background: rgba(18, 23, 33, 0.75);
+      background: rgba(18, 23, 33, 0.82);
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
       border: 1px solid var(--border-medium);
       border-radius: var(--radius-lg);
       padding: 56px 40px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
-      animation: cardAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(223, 109, 65, 0.15);
+      animation: cardAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+                 cardFloat 6s ease-in-out infinite 0.8s,
+                 cardAuraPulse 5s ease-in-out infinite alternate;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .error-card:hover {
+      transform: translateY(-8px) scale(1.015);
+      box-shadow: 0 32px 75px rgba(0, 0, 0, 0.7), 0 0 55px rgba(223, 109, 65, 0.28);
     }
 
     @keyframes cardAppear {
       from { opacity: 0; transform: translateY(30px) scale(0.96); }
       to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes cardFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    @keyframes cardAuraPulse {
+      0% {
+        border-color: rgba(141, 166, 204, 0.28);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(223, 109, 65, 0.12);
+      }
+      50% {
+        border-color: rgba(223, 109, 65, 0.5);
+        box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 45px rgba(247, 216, 154, 0.22);
+      }
+      100% {
+        border-color: rgba(141, 166, 204, 0.38);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(141, 166, 204, 0.2);
+      }
     }
 
     .error-logo-wrap {
@@ -214,10 +246,6 @@
         </svg>
         <span>Go Back Previous</span>
       </button>
-
-      <a href="contact.html" class="btn btn-accent btn-lg">
-        <span>Reach Our Studio</span>
-      </a>
     </div>
   </main>
 

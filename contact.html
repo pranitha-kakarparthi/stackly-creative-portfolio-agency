@@ -20,7 +20,6 @@
       <span class="loader-text">Opening Channels...</span>
     </div>
   </div>
-
   <!-- Sticky Navbar -->
   <header class="site-header" role="banner">
     <div class="nav-container">
@@ -42,10 +41,9 @@
             <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
           <div class="dropdown-menu">
-            <a href="services.html" class="dropdown-link">Full Services Directory</a>
             <a href="service-details.html" class="dropdown-link">Brand & Experience Lab</a>
-            <a href="404.html" class="dropdown-link">Motion & 3D WebGL</a>
-            <a href="404.html" class="dropdown-link">Design Systems Core</a>
+            <a href="service-motion.html" class="dropdown-link">Motion & 3D WebGL</a>
+            <a href="service-design-systems.html" class="dropdown-link">Design Systems Core</a>
           </div>
         </div>
         <div class="nav-item">
@@ -54,10 +52,9 @@
             <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
           <div class="dropdown-menu">
-            <a href="portfolio.html" class="dropdown-link">Selected Works</a>
             <a href="project-details.html" class="dropdown-link">Lumina Brand Case Study</a>
-            <a href="404.html" class="dropdown-link">Nexus FinTech Archive</a>
-            <a href="404.html" class="dropdown-link">Spatial Audio Showcase</a>
+            <a href="project-nexus.html" class="dropdown-link">Nexus FinTech Archive</a>
+            <a href="project-spatial-audio.html" class="dropdown-link">Spatial Audio Showcase</a>
           </div>
         </div>
         <div class="nav-item">
@@ -71,7 +68,7 @@
         </div>
       </nav>
 
-      <!-- Desktop Action CTAs -->
+      <!-- Desktop Action CTAs (Hidden on mobile per guidelines) -->
       <div class="nav-actions-desktop">
         <a href="sign-in.html" class="btn btn-secondary btn-sm">Sign In</a>
         <a href="sign-up.html" class="btn btn-primary btn-sm">Get Started</a>
@@ -101,9 +98,9 @@
           <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
         </a>
         <div class="mobile-submenu">
-          <a href="services.html" class="mobile-sub-link">Full Services Directory</a>
           <a href="service-details.html" class="mobile-sub-link">Brand & Experience Lab</a>
-          <a href="404.html" class="mobile-sub-link">Motion & 3D WebGL</a>
+          <a href="service-motion.html" class="mobile-sub-link">Motion & 3D WebGL</a>
+          <a href="service-design-systems.html" class="mobile-sub-link">Design Systems Core</a>
         </div>
       </li>
       <li class="mobile-nav-item">
@@ -112,9 +109,9 @@
           <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
         </a>
         <div class="mobile-submenu">
-          <a href="portfolio.html" class="mobile-sub-link">Selected Works</a>
           <a href="project-details.html" class="mobile-sub-link">Lumina Brand Case Study</a>
-          <a href="404.html" class="mobile-sub-link">Nexus FinTech Archive</a>
+          <a href="project-nexus.html" class="mobile-sub-link">Nexus FinTech Archive</a>
+          <a href="project-spatial-audio.html" class="mobile-sub-link">Spatial Audio Showcase</a>
         </div>
       </li>
       <li class="mobile-nav-item">
@@ -128,11 +125,14 @@
       </li>
     </ul>
 
+    <!-- Mobile Drawer Actions (Single unified action buttons for small screens) -->
     <div class="mobile-actions">
       <a href="sign-in.html" class="btn btn-secondary">Sign In</a>
       <a href="sign-up.html" class="btn btn-primary">Start Project</a>
     </div>
   </div>
+
+  
 
   <main id="main-content">
     <!-- SECTION 1: HERO WITH ANIMATED BACKGROUND -->
@@ -340,124 +340,6 @@
             <div style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">08:00 - 13:00</div>
             <p style="font-size: 0.85rem; color: var(--text-muted);">Dedicated asynchronous video walk-throughs and daily morning standup overlaps.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 6: FAQ ACCORDION -->
-    <section class="section" aria-label="Inquiry FAQs">
-      <div class="container" style="max-width: 860px;">
-        <div class="section-header text-center" data-animate>
-          <span class="badge-pill morning-sky">Inquiry FAQ</span>
-          <h2 class="section-title">What Happens After You Inquire?</h2>
-          <p class="section-subtitle">A transparent view of our intake and preliminary discovery process.</p>
-        </div>
-
-        <div class="accordion" data-animate>
-          <div class="accordion-item active">
-            <button class="accordion-header" type="button" aria-expanded="true">
-              <span>How quickly will a creative lead respond?</span>
-              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
-            </button>
-            <div class="accordion-body">
-              All inquiries submitted through this form are reviewed directly by our Executive Creative Director or Principal UI Architect. You will receive an initial personalized assessment within 12 business hours.
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <button class="accordion-header" type="button" aria-expanded="false">
-              <span>Do you sign Non-Disclosure Agreements (NDAs)?</span>
-              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
-            </button>
-            <div class="accordion-body">
-              Yes. We routinely work with stealth startups, proprietary algorithmic platforms, and unreleased hardware. We are happy to execute standard mutual NDAs prior to in-depth technical discussions.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7: DIRECT SPRINT DISCOVERY & CALL SCHEDULING -->
-    <section class="section section-darker" aria-label="Schedule Discovery Call">
-      <div class="container">
-        <div class="grid-2" style="align-items: center; gap: 48px;">
-          <div data-animate>
-            <span class="badge-pill canyon">Rapid Booking</span>
-            <h2 class="section-title">Prefer an Immediate 30-Minute Architecture Review?</h2>
-            <p style="font-size: 1.05rem; line-height: 1.65; margin-bottom: 24px; color: var(--text-secondary);">
-              Skip asynchronous form delays. Book an exploratory strategy session directly with our Principal Creative Lead and Head of Engineering.
-            </p>
-            <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px;">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(223, 109, 65, 0.15); color: var(--color-canyon); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">1</div>
-                <span style="font-size: 0.95rem; color: var(--text-primary);">Audit current brand assets or product design bottlenecks</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(247, 216, 154, 0.15); color: var(--color-buttercream); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">2</div>
-                <span style="font-size: 0.95rem; color: var(--text-primary);">Evaluate preliminary sprint scope and budget alignment</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 28px; height: 28px; border-radius: 50%; background: rgba(141, 166, 204, 0.15); color: var(--color-morning-sky); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">3</div>
-                <span style="font-size: 0.95rem; color: var(--text-primary);">Receive a tailored 48-hour sprint execution proposal</span>
-              </div>
-            </div>
-            <a href="404.html" class="btn btn-primary btn-lg">
-              <span>Launch Live Cal Video Slot</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            </a>
-          </div>
-          <div data-animate>
-            <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
-              <img src="assets/images/sprint-consultation-booking.webp" alt="Creative studio video consultation and sprint planning" style="width: 100%; height: 360px; object-fit: cover; display: block;">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 8: ENTERPRISE CONFIDENTIALITY & IP GOVERNANCE -->
-    <section class="section" aria-label="Confidentiality and IP Rights">
-      <div class="container">
-        <div class="section-header text-center" data-animate>
-          <span class="badge-pill buttercream">Ironclad Protection</span>
-          <h2 class="section-title">Confidentiality, NDAs & Absolute IP Ownership</h2>
-          <p class="section-subtitle">We protect your proprietary innovations with enterprise-grade legal frameworks.</p>
-        </div>
-        <div class="grid-3" data-animate>
-          <div class="card-glass">
-            <h4 style="color: var(--color-canyon); margin-bottom: 8px;">100% IP Transfer</h4>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-              Upon milestone completion and settlement, all raw design tokens, vectors, source code repositories, and brand rights are fully transferred to your company.
-            </p>
-          </div>
-          <div class="card-glass">
-            <h4 style="color: var(--color-buttercream); margin-bottom: 8px;">Mutual NDA Available</h4>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-              Have proprietary trade secrets or venture backing in stealth mode? Request our bilateral non-disclosure agreement or provide your preferred legal document.
-            </p>
-            <a href="404.html" class="btn btn-secondary btn-sm" style="margin-top: 12px;">Request Mutual NDA</a>
-          </div>
-          <div class="card-glass">
-            <h4 style="color: var(--color-olive-grove); margin-bottom: 8px;">Air-Gapped Workspaces</h4>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-              Client assets are isolated in dedicated private Figma workspaces and encrypted GitHub organizations with role-based biometric authentication.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 9: PRESS & SPEAKING INQUIRIES -->
-    <section class="section section-darker" aria-label="Press and Speaking">
-      <div class="container text-center" style="max-width: 800px;" data-animate>
-        <span class="badge-pill olive">Media & Academic Guild</span>
-        <h2 class="section-title">Press Kits, Podcasts & Design Conference Keynotes</h2>
-        <p style="font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 28px;">
-          Our creative directors and design architects regularly keynote international design conferences and publish research on generative design systems.
-        </p>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="404.html" class="btn btn-secondary">Download Press Assets (.ZIP)</a>
-          <a href="404.html" class="btn btn-olive">Invite Speaker to Keynote</a>
         </div>
       </div>
     </section>
