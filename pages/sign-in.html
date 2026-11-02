@@ -31,7 +31,7 @@
 
       <div class="auth-left-content">
         <!-- Brand Logo & Moved Back to Home Button on Left Side -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; width: 100%;">
+        <div class="auth-mobile-header-hide-mobile" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; width: 100%;">
           <div class="auth-logo-wrap">
             <a href="../index.html" title="Return to Stackly Home">
               <img src="../assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="auth-logo">
@@ -45,10 +45,10 @@
 
         <div class="auth-brand-statement">
           <span class="badge-pill canyon" style="margin-bottom: 16px;">Studio Portal Gateway</span>
-          <h2 style="font-size: clamp(2rem, 3.2vw, 2.8rem); line-height: 1.15; margin-bottom: 16px; color: #FFFFFF;">
+          <h2 class="auth-brand-heading">
             Where Groundbreaking <span class="hero-highlight">Aesthetics Converge</span>.
           </h2>
-          <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 440px; line-height: 1.65;">
+          <p class="auth-brand-desc">
             Authenticate into your customized studio command center to review high-fidelity prototypes, sign off milestone deliverables, and orchestrate creative sprints.
           </p>
         </div>
@@ -74,7 +74,10 @@
 
     <!-- RIGHT SIDE: SCROLLABLE FORM SECTION -->
     <main class="auth-right-scrollable" role="main">
-      <div class="auth-top-nav" style="justify-content: flex-end;">
+      <div class="auth-top-nav">
+        <a href="../index.html" class="auth-mobile-logo" title="Return to Stackly Home">
+          <img src="../assets/images/logoStackly.webp" alt="Stackly Studio Logo" class="auth-logo-img">
+        </a>
         <div class="auth-top-action">
           <span>Don't have an account?</span>
           <a href="sign-up.html">Register Now</a>

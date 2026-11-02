@@ -31,7 +31,7 @@
 
       <div class="auth-left-content">
         <!-- Brand Logo & Moved Back to Home Button on Left Side -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; width: 100%;">
+        <div class="auth-mobile-header-hide-mobile" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; width: 100%;">
           <div class="auth-logo-wrap">
             <a href="../index.html" title="Return to Stackly Home">
               <img src="../assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="auth-logo">
@@ -45,14 +45,14 @@
 
         <div class="auth-brand-statement">
           <span class="badge-pill buttercream" style="margin-bottom: 16px;">Collaborator Registration</span>
-          <h2 style="font-size: clamp(2rem, 3.2vw, 2.8rem); line-height: 1.15; margin-bottom: 16px; color: #FFFFFF;">
+          <h2 class="auth-brand-heading">
             Join An Elite Guild of <span class="hero-highlight">Digital Pioneers</span>.
           </h2>
-          <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 440px; line-height: 1.65; margin-bottom: 24px;">
+          <p class="auth-brand-desc">
             Create your credential profile to manage sprints, review architectural design tokens, and collaborate directly with senior creative directors.
           </p>
 
-          <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-secondary);">
+          <ul class="auth-perks-list">
             <li>✓ Real-Time Figma & Code Token Synchronization</li>
             <li>✓ Dedicated Asynchronous Video Loom Critiques</li>
             <li>✓ Bi-Weekly Executive Strategy & Roadmap Reviews</li>
@@ -81,7 +81,10 @@
 
     <!-- RIGHT SIDE: SCROLLABLE REGISTRATION FORM -->
     <main class="auth-right-scrollable" role="main">
-      <div class="auth-top-nav" style="justify-content: flex-end;">
+      <div class="auth-top-nav">
+        <a href="../index.html" class="auth-mobile-logo" title="Return to Stackly Home">
+          <img src="../assets/images/logoStackly.webp" alt="Stackly Studio Logo" class="auth-logo-img">
+        </a>
         <div class="auth-top-action">
           <span>Already registered?</span>
           <a href="sign-in.html">Sign In Here</a>
