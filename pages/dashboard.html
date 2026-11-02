@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio Portal & Command Center | Stackly Creative Agency</title>
   <meta name="description" content="Stackly Studio Portal. Track active design sprints, milestones, token synchronizations, and client deliverables.">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
 <body class="dashboard-layout">
 
   <!-- Full Viewport Page Loader -->
   <div id="page-loader" role="status" aria-live="polite">
     <div class="loader-brand">
-      <img src="assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="loader-logo">
+      <img src="../assets/images/logoStackly.webp" alt="Stackly Creative Agency" class="loader-logo">
       <div class="loader-spinner-wrap">
         <div class="loader-spinner"></div>
       </div>
@@ -24,11 +24,12 @@
   <!-- COLLAPSIBLE SIDEBAR WITH TOOLTIPS -->
   <aside class="dashboard-sidebar" aria-label="Studio Navigation">
     <div class="sidebar-header">
-      <a href="index.html" class="sidebar-brand" title="Stackly Home">
-        <img src="assets/images/logoStackly.webp" alt="Stackly Studio" class="sidebar-logo">
+      <a href="../index.html" class="sidebar-brand" title="Stackly Home">
+        <img src="../assets/images/logoStackly.webp" alt="Stackly Studio" class="sidebar-logo">
       </a>
       <!-- Collapse button: Closes the side menu bar completely and makes content visible -->
       <button type="button" id="sidebar-collapse-btn" class="sidebar-toggle-btn" aria-label="Collapse Side Menu Bar" title="Collapse Side Menu Bar">
+        <span class="collapse-label">Collapse</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
@@ -56,6 +57,14 @@
           <span class="sidebar-label">Active Projects</span>
         </a>
       </div>
+
+      <div class="sidebar-nav-item">
+        <a href="#services" class="sidebar-nav-link dash-nav-tab" data-view="view-services">
+          <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span class="sidebar-label">Services & Retainers</span>
+        </a>
+      </div>
+
 
       <div class="sidebar-category-label">Architecture & Assets</div>
 
@@ -411,28 +420,28 @@
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Senior practitioners actively deployed to ongoing client sprints.</p>
           <div class="grid-4">
             <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
-              <img src="assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
               <div>
                 <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Elena Rostova</strong>
                 <span style="font-size: 0.75rem; color: var(--color-buttercream);">Executive Creative Dir</span>
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
-              <img src="assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
               <div>
                 <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Marcus Vance</strong>
                 <span style="font-size: 0.75rem; color: var(--color-morning-sky);">Principal UI Architect</span>
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
-              <img src="assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
               <div>
                 <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Liam O'Connor</strong>
                 <span style="font-size: 0.75rem; color: var(--color-canyon);">Motion & 3D Lead</span>
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 12px; background: var(--bg-surface); padding: 12px; border-radius: var(--radius-md);">
-              <img src="assets/images/principal-fullstack-dev-aisha-patel.webp" alt="Aisha Patel" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/principal-fullstack-dev-aisha-patel.webp" alt="Aisha Patel" style="width: 44px; height: 44px; border-radius: 50%;" class="img-preserve-face">
               <div>
                 <strong style="font-size: 0.9rem; color: #FFFFFF; display: block;">Aisha Patel</strong>
                 <span style="font-size: 0.75rem; color: var(--color-olive-grove);">Full-Stack Architect</span>
@@ -918,7 +927,7 @@
         <div class="grid-3" style="margin-bottom: 24px;">
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/creative-director-elena-rostova.webp" alt="Elena Rostova" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
               <div><strong style="color: #FFFFFF;">Elena Rostova</strong><div style="font-size: 0.8rem; color: var(--color-buttercream);">Executive Creative Director</div></div>
             </div>
             <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Lumina Lighting Sprint • 92% Utilization</div>
@@ -926,7 +935,7 @@
 
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/lead-ui-architect-marcus-vance.webp" alt="Marcus Vance" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
               <div><strong style="color: #FFFFFF;">Marcus Vance</strong><div style="font-size: 0.8rem; color: var(--color-morning-sky);">Principal UI Architect</div></div>
             </div>
             <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Nexus FinTech Workstation • 94% Utilization</div>
@@ -934,7 +943,7 @@
 
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/senior-motion-designer-liam-oconnor.webp" alt="Liam O'Connor" style="width: 52px; height: 52px; border-radius: 50%;" class="img-preserve-face">
               <div><strong style="color: #FFFFFF;">Liam O'Connor</strong><div style="font-size: 0.8rem; color: var(--color-canyon);">Director of Motion & 3D</div></div>
             </div>
             <div style="font-size: 0.85rem; color: var(--text-muted);">Allocated to Hyperion Acoustics 3D • 88% Utilization</div>
@@ -945,13 +954,13 @@
         <div class="grid-2" style="margin-bottom: 24px;">
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px;">
-              <img src="assets/images/principal-fullstack-dev-aisha-patel.webp" alt="Aisha Patel" style="width: 48px; height: 48px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/principal-fullstack-dev-aisha-patel.webp" alt="Aisha Patel" style="width: 48px; height: 48px; border-radius: 50%;" class="img-preserve-face">
               <div><strong style="color: #FFFFFF;">Aisha Patel</strong><div style="font-size: 0.8rem; color: var(--color-olive-grove);">Principal Full-Stack Architect</div></div>
             </div>
           </div>
           <div class="card-glass">
             <div style="display: flex; align-items: center; gap: 14px;">
-              <img src="assets/images/ux-research-lead-daniel-kim.webp" alt="Daniel Kim" style="width: 48px; height: 48px; border-radius: 50%;" class="img-preserve-face">
+              <img src="../assets/images/ux-research-lead-daniel-kim.webp" alt="Daniel Kim" style="width: 48px; height: 48px; border-radius: 50%;" class="img-preserve-face">
               <div><strong style="color: #FFFFFF;">Daniel Kim</strong><div style="font-size: 0.8rem; color: var(--color-buttercream);">Director of UX Research</div></div>
             </div>
           </div>
@@ -1073,10 +1082,168 @@
         </div>
       </div>
 
+    
+      <!-- ==========================================
+           TAB VIEW 8: SERVICES & RETAINERS (6 SECTIONS)
+           ========================================== -->
+      <div id="view-services" class="dash-tab-view" style="display: none;">
+
+        <!-- SECTION 1: HEADER & RETAINER BURNDOWN OVERVIEW -->
+        <div class="dash-section-header">
+          <div>
+            <span class="badge-pill canyon">Studio Practices & Retainers</span>
+            <h2 style="font-size: 1.6rem; margin-top: 6px;">Enterprise Retainers & Specialized Services</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Track dedicated hours, subscribed practice disciplines, and active squad allocations.</p>
+          </div>
+          <a href="404.html" class="btn btn-primary btn-sm">Upgrade Practice Tier</a>
+        </div>
+
+        <!-- SECTION 2: SERVICES KPI METRICS -->
+        <div class="kpi-grid" style="margin-bottom: 32px;">
+          <div class="kpi-card card-glass">
+            <span class="kpi-title">Active Retainer Tier</span>
+            <div class="kpi-value" style="color: var(--color-buttercream); font-size: 1.85rem;">Enterprise Elite</div>
+            <div class="kpi-trend trend-up">Full Studio Access</div>
+          </div>
+          <div class="kpi-card card-glass">
+            <span class="kpi-title">Allocated Hours</span>
+            <div class="kpi-value" style="color: var(--color-canyon); font-size: 1.85rem;">160 hrs / mo</div>
+            <div class="kpi-trend trend-neutral">114 hrs Remaining</div>
+          </div>
+          <div class="kpi-card card-glass">
+            <span class="kpi-title">Subscribed Disciplines</span>
+            <div class="kpi-value" style="color: var(--color-morning-sky); font-size: 1.85rem;">4 Practices</div>
+            <div class="kpi-trend trend-up">Brand, Motion, DS, UI/UX</div>
+          </div>
+          <div class="kpi-card card-glass">
+            <span class="kpi-title">Sprint Cycle Health</span>
+            <div class="kpi-value" style="color: var(--color-olive-grove); font-size: 1.85rem;">99.8%</div>
+            <div class="kpi-trend trend-up">Zero Escalations</div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: SUBSCRIBED PRACTICE DISCIPLINES GRID -->
+        <div class="dash-grid-2" style="margin-bottom: 32px;">
+          <div class="dash-widget card-glass">
+            <h3 style="font-size: 1.15rem; color: #FFFFFF; margin-bottom: 16px;">Subscribed Studio Practices</h3>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div>
+                  <strong style="color: #FFFFFF; display: block;">Brand & Experience Lab</strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Lead: Elena Rostova • 40 hrs allocated</span>
+                </div>
+                <span class="badge-pill canyon" style="padding: 2px 10px; font-size: 0.75rem;">Active Sprint</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div>
+                  <strong style="color: #FFFFFF; display: block;">Motion & 3D WebGL Practice</strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Lead: Julian Alvarez • 35 hrs allocated</span>
+                </div>
+                <span class="badge-pill morning-sky" style="padding: 2px 10px; font-size: 0.75rem;">In Progress</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div>
+                  <strong style="color: #FFFFFF; display: block;">Design Systems Core</strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Lead: Marcus Vance • 45 hrs allocated</span>
+                </div>
+                <span class="badge-pill olive" style="padding: 2px 10px; font-size: 0.75rem;">Continuous QA</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div>
+                  <strong style="color: #FFFFFF; display: block;">UI/UX Product Architecture</strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Lead: Sophia Chen • 40 hrs allocated</span>
+                </div>
+                <span class="badge-pill buttercream" style="padding: 2px 10px; font-size: 0.75rem;">Review Phase</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 4: RETAINER CONSUMPTION CHART -->
+          <div class="dash-widget card-glass">
+            <h3 style="font-size: 1.15rem; color: #FFFFFF; margin-bottom: 16px;">Practice Hours Consumed This Month</h3>
+            <div class="chart-container" style="height: 180px; align-items: flex-end; gap: 14px;">
+              <div class="chart-bar-wrap" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                <div style="width: 100%; height: 65%; background: var(--color-canyon); border-radius: 4px 4px 0 0;"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Brand</span>
+              </div>
+              <div class="chart-bar-wrap" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                <div style="width: 100%; height: 50%; background: var(--color-morning-sky); border-radius: 4px 4px 0 0;"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Motion</span>
+              </div>
+              <div class="chart-bar-wrap" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                <div style="width: 100%; height: 80%; background: var(--color-olive-grove); border-radius: 4px 4px 0 0;"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Design Sys</span>
+              </div>
+              <div class="chart-bar-wrap" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                <div style="width: 100%; height: 40%; background: var(--color-buttercream); border-radius: 4px 4px 0 0;"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">UI/UX</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 18px; font-size: 0.85rem; color: var(--text-muted);">
+              <span>Month Progress: Day 12 of 30</span>
+              <span style="color: var(--color-olive-grove); font-weight: 600;">Pacing Optimal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 5: SERVICES DELIVERABLES MATRIX -->
+        <div class="card-glass" style="margin-bottom: 32px;">
+          <h3 style="font-size: 1.2rem; color: #FFFFFF; margin-bottom: 16px;">Practice Deliverables Roadmap</h3>
+          <div class="table-responsive">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Practice Discipline</th>
+                  <th>Deliverable Milestone</th>
+                  <th>Assigned Lead</th>
+                  <th>ETA</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brand & Experience Lab</td>
+                  <td>Master Mark SVG Geometry & Dark Palette</td>
+                  <td>Elena Rostova</td>
+                  <td>Nov 08, 2026</td>
+                  <td><span class="badge-pill olive" style="padding: 2px 10px; font-size: 0.75rem;">92% Done</span></td>
+                </tr>
+                <tr>
+                  <td>Motion & 3D WebGL</td>
+                  <td>Custom Three.js Hardware Visualizer</td>
+                  <td>Julian Alvarez</td>
+                  <td>Nov 14, 2026</td>
+                  <td><span class="badge-pill canyon" style="padding: 2px 10px; font-size: 0.75rem;">In Review</span></td>
+                </tr>
+                <tr>
+                  <td>Design Systems Core</td>
+                  <td>WCAG AAA Chromatic Token Pipeline</td>
+                  <td>Marcus Vance</td>
+                  <td>Nov 19, 2026</td>
+                  <td><span class="badge-pill buttercream" style="padding: 2px 10px; font-size: 0.75rem;">Drafting</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- SECTION 6: SERVICE ADD-ON ACTION BANNER -->
+        <div class="card-glass text-center" style="padding: 36px 20px; background: linear-gradient(135deg, rgba(223, 86, 44, 0.08), rgba(239, 236, 230, 0.04));">
+          <h3 style="font-size: 1.35rem; color: #FFFFFF; margin-bottom: 10px;">Need An Emergency Architectural Sprint?</h3>
+          <p style="color: var(--text-muted); max-width: 580px; margin: 0 auto 24px; font-size: 0.95rem;">
+            Book an accelerated 1-week rapid prototyping or CRO conversion audit sprint with our senior design leads.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+            <a href="404.html" class="btn btn-primary">Book Accelerated Sprint</a>
+            <a href="404.html" class="btn btn-secondary">Request Retainer Expansion</a>
+          </div>
+        </div>
+      </div>
+
     </main>
   </div>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/dashboard.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
 </body>
 </html>

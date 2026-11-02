@@ -63,6 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburgerBtn.addEventListener('click', toggleMenu);
 
+    // Dedicated Collapse Button inside mobile drawer
+    const drawerCollapseBtns = mobileDrawer.querySelectorAll('.mobile-drawer-collapse-btn');
+    drawerCollapseBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        mobileDrawer.classList.remove('active');
+        document.body.classList.remove('scroll-locked');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
     // Close mobile menu on clicking any navigation link (unless it's a dropdown toggle)
     mobileDrawer.querySelectorAll('a:not(.mobile-dropdown-toggle)').forEach(link => {
       link.addEventListener('click', () => {
@@ -214,4 +225,3 @@ document.addEventListener('DOMContentLoaded', () => {
     return 'Welcome';
   };
 });
-

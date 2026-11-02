@@ -32,45 +32,45 @@
           <a href="index.html" class="nav-link active">Home</a>
         </div>
         <div class="nav-item">
-          <a href="about.html" class="nav-link">About Us</a>
+          <a href="pages/about.html" class="nav-link">About Us</a>
         </div>
         <div class="nav-item">
-          <a href="services.html" class="nav-link">
+          <a href="pages/services.html" class="nav-link">
             <span>Services</span>
             <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
           <div class="dropdown-menu">
-            <a href="service-details.html" class="dropdown-link">Brand & Experience Lab</a>
-            <a href="service-motion.html" class="dropdown-link">Motion & 3D WebGL</a>
-            <a href="service-design-systems.html" class="dropdown-link">Design Systems Core</a>
+            <a href="pages/service-details.html" class="dropdown-link">Brand & Experience Lab</a>
+            <a href="pages/service-motion.html" class="dropdown-link">Motion & 3D WebGL</a>
+            <a href="pages/service-design-systems.html" class="dropdown-link">Design Systems Core</a>
           </div>
         </div>
         <div class="nav-item">
-          <a href="portfolio.html" class="nav-link">
+          <a href="pages/portfolio.html" class="nav-link">
             <span>Portfolio</span>
             <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
           <div class="dropdown-menu">
-            <a href="project-details.html" class="dropdown-link">Lumina Brand Case Study</a>
-            <a href="project-nexus.html" class="dropdown-link">Nexus FinTech Archive</a>
-            <a href="project-spatial-audio.html" class="dropdown-link">Spatial Audio Showcase</a>
+            <a href="pages/project-details.html" class="dropdown-link">Lumina Brand Case Study</a>
+            <a href="pages/project-nexus.html" class="dropdown-link">Nexus FinTech Archive</a>
+            <a href="pages/project-spatial-audio.html" class="dropdown-link">Spatial Audio Showcase</a>
           </div>
         </div>
         <div class="nav-item">
-          <a href="team.html" class="nav-link">Collective</a>
+          <a href="pages/team.html" class="nav-link">Collective</a>
         </div>
         <div class="nav-item">
-          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="pages/pricing.html" class="nav-link">Pricing</a>
         </div>
         <div class="nav-item">
-          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="pages/contact.html" class="nav-link">Contact</a>
         </div>
       </nav>
 
       <!-- Desktop Action CTAs (Hidden on mobile per guidelines) -->
       <div class="nav-actions-desktop">
-        <a href="sign-in.html" class="btn btn-secondary btn-sm">Sign In</a>
-        <a href="sign-up.html" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="pages/sign-in.html" class="btn btn-secondary btn-sm">Sign In</a>
+        <a href="pages/sign-up.html" class="btn btn-primary btn-sm">Get Started</a>
       </div>
 
       <!-- Mobile Hamburger Button -->
@@ -84,12 +84,25 @@
 
   <!-- Mobile Full-Screen Navigation Drawer -->
   <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <!-- Mobile Drawer Top Bar with Brand & Dedicated Collapse Button -->
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="mobile-drawer-brand" title="Stackly Home">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Studio Logo" class="mobile-drawer-logo">
+      </a>
+      <button type="button" class="mobile-drawer-collapse-btn" aria-label="Collapse Navigation Menu" title="Collapse Menu">
+        <span>Collapse</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+    </div>
+
     <ul class="mobile-nav-list">
       <li class="mobile-nav-item">
         <a href="index.html" class="mobile-nav-link active">Home</a>
       </li>
       <li class="mobile-nav-item">
-        <a href="about.html" class="mobile-nav-link">About Us</a>
+        <a href="pages/about.html" class="mobile-nav-link">About Us</a>
       </li>
       <li class="mobile-nav-item">
         <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
@@ -97,9 +110,9 @@
           <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
         </a>
         <div class="mobile-submenu">
-          <a href="service-details.html" class="mobile-sub-link">Brand & Experience Lab</a>
-          <a href="service-motion.html" class="mobile-sub-link">Motion & 3D WebGL</a>
-          <a href="service-design-systems.html" class="mobile-sub-link">Design Systems Core</a>
+          <a href="pages/service-details.html" class="mobile-sub-link">Brand & Experience Lab</a>
+          <a href="pages/service-motion.html" class="mobile-sub-link">Motion & 3D WebGL</a>
+          <a href="pages/service-design-systems.html" class="mobile-sub-link">Design Systems Core</a>
         </div>
       </li>
       <li class="mobile-nav-item">
@@ -108,26 +121,26 @@
           <svg class="dropdown-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
         </a>
         <div class="mobile-submenu">
-          <a href="project-details.html" class="mobile-sub-link">Lumina Brand Case Study</a>
-          <a href="project-nexus.html" class="mobile-sub-link">Nexus FinTech Archive</a>
-          <a href="project-spatial-audio.html" class="mobile-sub-link">Spatial Audio Showcase</a>
+          <a href="pages/project-details.html" class="mobile-sub-link">Lumina Brand Case Study</a>
+          <a href="pages/project-nexus.html" class="mobile-sub-link">Nexus FinTech Archive</a>
+          <a href="pages/project-spatial-audio.html" class="mobile-sub-link">Spatial Audio Showcase</a>
         </div>
       </li>
       <li class="mobile-nav-item">
-        <a href="team.html" class="mobile-nav-link">Collective</a>
+        <a href="pages/team.html" class="mobile-nav-link">Collective</a>
       </li>
       <li class="mobile-nav-item">
-        <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+        <a href="pages/pricing.html" class="mobile-nav-link">Pricing</a>
       </li>
       <li class="mobile-nav-item">
-        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
       </li>
     </ul>
 
     <!-- Mobile Drawer Actions (Single unified action buttons for small screens) -->
     <div class="mobile-actions">
-      <a href="sign-in.html" class="btn btn-secondary">Sign In</a>
-      <a href="sign-up.html" class="btn btn-primary">Start Project</a>
+      <a href="pages/sign-in.html" class="btn btn-secondary">Sign In</a>
+      <a href="pages/sign-up.html" class="btn btn-primary">Start Project</a>
     </div>
   </div>
 
@@ -159,7 +172,7 @@
         </p>
 
         <div class="hero-actions">
-          <a href="portfolio.html" class="btn btn-primary btn-lg">
+          <a href="pages/portfolio.html" class="btn btn-primary btn-lg">
             <span>Explore Selected Works</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -167,7 +180,7 @@
             </svg>
           </a>
 
-          <a href="404.html" class="btn btn-secondary btn-lg">
+          <a href="pages/404.html" class="btn btn-secondary btn-lg">
             <span>Watch Showreel 2026</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -212,8 +225,8 @@
               Founded as an autonomous creative collective, Stackly partners with visionary founders and global enterprises to dismantle cookie-cutter templates. We craft tailored digital touchpoints engineered for conversion and revered for aesthetics.
             </p>
             <div style="display: flex; gap: 16px;">
-              <a href="about.html" class="btn btn-secondary">Learn Our Story</a>
-              <a href="team.html" class="btn btn-olive">Meet the Collective</a>
+              <a href="pages/about.html" class="btn btn-secondary">Learn Our Story</a>
+              <a href="pages/team.html" class="btn btn-olive">Meet the Collective</a>
             </div>
           </div>
           <div data-animate style="position: relative;">
@@ -264,7 +277,7 @@
             <p style="margin-bottom: 24px; font-size: 0.925rem;">
               Visual guidelines, comprehensive design tokens, custom typography hierarchy, brand voice, and distinctive iconography tailored for longevity.
             </p>
-            <a href="service-details.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
+            <a href="pages/service-details.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
           </div>
 
           <!-- Service 2 -->
@@ -276,7 +289,7 @@
             <p style="margin-bottom: 24px; font-size: 0.925rem;">
               Human-centric user journeys, high-fidelity prototypes, interactive wireframes, and enterprise-scale component libraries built for scale.
             </p>
-            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
+            <a href="pages/404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
           </div>
 
           <!-- Service 3 -->
@@ -288,7 +301,7 @@
             <p style="margin-bottom: 24px; font-size: 0.925rem;">
               Cinematic product visualizations, micro-interactions, WebGL shaders, and scroll-driven storytelling that mesmerize users.
             </p>
-            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
+            <a href="pages/404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
           </div>
 
           <!-- Service 4 -->
@@ -300,7 +313,7 @@
             <p style="margin-bottom: 24px; font-size: 0.925rem;">
               Blazing fast, accessible, Lighthouse 95+ responsive web architectures with modern semantic HTML5, CSS Grid, and headless APIs.
             </p>
-            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
+            <a href="pages/404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
           </div>
 
           <!-- Service 5 -->
@@ -312,7 +325,7 @@
             <p style="margin-bottom: 24px; font-size: 0.925rem;">
               Data-backed user psychology audits, funnel friction reduction, quantitative A/B testing frameworks, and revenue-maximizing flows.
             </p>
-            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
+            <a href="pages/404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
           </div>
 
           <!-- Service 6 -->
@@ -324,7 +337,7 @@
             <p style="margin-bottom: 24px; font-size: 0.925rem;">
               Editorial aesthetics, bespoke color curation, photography styling guidelines, and storytelling that sets brands apart in crowded sectors.
             </p>
-            <a href="404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
+            <a href="pages/404.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Discipline</a>
           </div>
         </div>
       </div>
@@ -339,7 +352,7 @@
             <h2 class="section-title">Selected Case Studies</h2>
             <p class="section-subtitle">A curated preview of digital experiences crafted with intention and rigor.</p>
           </div>
-          <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+          <a href="pages/portfolio.html" class="btn btn-primary">View All Projects</a>
         </div>
 
         <div class="grid-2" data-animate>
@@ -351,12 +364,12 @@
             </div>
             <div class="portfolio-info">
               <span class="portfolio-meta">Branding • Design System • 2026</span>
-              <h3 class="portfolio-title"><a href="project-details.html">Lumina Studio: Redefining Pure Minimalist Luxury</a></h3>
+              <h3 class="portfolio-title"><a href="pages/project-details.html">Lumina Studio: Redefining Pure Minimalist Luxury</a></h3>
               <p class="portfolio-desc">
                 A monochromatic digital redesign and holistic design language for an architectural lighting studio resulting in +180% inbound client inquiries.
               </p>
               <div style="margin-top: 14px;">
-                <a href="project-details.html" class="btn btn-secondary btn-sm">Read Case Study</a>
+                <a href="pages/project-details.html" class="btn btn-secondary btn-sm">Read Case Study</a>
               </div>
             </div>
           </article>
@@ -369,12 +382,12 @@
             </div>
             <div class="portfolio-info">
               <span class="portfolio-meta">SaaS Product • UI/UX Architecture</span>
-              <h3 class="portfolio-title"><a href="404.html">Nexus Suite: Next-Gen Institutional Trading Portal</a></h3>
+              <h3 class="portfolio-title"><a href="pages/404.html">Nexus Suite: Next-Gen Institutional Trading Portal</a></h3>
               <p class="portfolio-desc">
                 Transforming high-frequency financial telemetry into an intuitive, zero-latency dashboard platform adopted by top institutional traders.
               </p>
               <div style="margin-top: 14px;">
-                <a href="404.html" class="btn btn-secondary btn-sm">Explore Project</a>
+                <a href="pages/404.html" class="btn btn-secondary btn-sm">Explore Project</a>
               </div>
             </div>
           </article>
@@ -387,12 +400,12 @@
             </div>
             <div class="portfolio-info">
               <span class="portfolio-meta">eCommerce • Creative Direction</span>
-              <h3 class="portfolio-title"><a href="404.html">Aurora Collective: High-End Circular Fashion Flagship</a></h3>
+              <h3 class="portfolio-title"><a href="pages/404.html">Aurora Collective: High-End Circular Fashion Flagship</a></h3>
               <p class="portfolio-desc">
                 An immersive visual eCommerce platform balancing carbon-neutral transparency with editorial haute-couture purchasing flows.
               </p>
               <div style="margin-top: 14px;">
-                <a href="404.html" class="btn btn-secondary btn-sm">Explore Project</a>
+                <a href="pages/404.html" class="btn btn-secondary btn-sm">Explore Project</a>
               </div>
             </div>
           </article>
@@ -405,12 +418,12 @@
             </div>
             <div class="portfolio-info">
               <span class="portfolio-meta">Hardware Launch • 3D Experience</span>
-              <h3 class="portfolio-title"><a href="404.html">Hyperion Acoustics: Spatial Hardware Showcase</a></h3>
+              <h3 class="portfolio-title"><a href="pages/404.html">Hyperion Acoustics: Spatial Hardware Showcase</a></h3>
               <p class="portfolio-desc">
                 A sensory product landing portal featuring real-time audio waveform visualizations and interactive 3D exploded hardware component views.
               </p>
               <div style="margin-top: 14px;">
-                <a href="404.html" class="btn btn-secondary btn-sm">Explore Project</a>
+                <a href="pages/404.html" class="btn btn-secondary btn-sm">Explore Project</a>
               </div>
             </div>
           </article>
@@ -560,7 +573,7 @@
                 <li>✓ Comprehensive Brand Book Guidelines</li>
               </ul>
             </div>
-            <a href="404.html" class="btn btn-secondary" style="width: 100%;">Select Sprint Plan</a>
+            <a href="pages/404.html" class="btn btn-secondary" style="width: 100%;">Select Sprint Plan</a>
           </div>
 
           <!-- Tier 2 (Highlighted) -->
@@ -583,7 +596,7 @@
                 <li>✓ Direct Slack Connect & Weekly Sprint Reviews</li>
               </ul>
             </div>
-            <a href="404.html" class="btn btn-primary" style="width: 100%;">Reserve Studio Pod</a>
+            <a href="pages/404.html" class="btn btn-primary" style="width: 100%;">Reserve Studio Pod</a>
           </div>
 
           <!-- Tier 3 -->
@@ -603,7 +616,7 @@
                 <li>✓ 24/7 Dedicated Support SLA & Training</li>
               </ul>
             </div>
-            <a href="404.html" class="btn btn-secondary" style="width: 100%;">Inquire Enterprise</a>
+            <a href="pages/404.html" class="btn btn-secondary" style="width: 100%;">Inquire Enterprise</a>
           </div>
         </div>
       </div>
@@ -674,8 +687,8 @@
           We accept a strictly limited number of strategic projects each quarter to ensure uncompromised quality and senior-level focus.
         </p>
         <div style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-primary btn-lg">Start Project Conversation</a>
-          <a href="404.html" class="btn btn-secondary btn-lg">Schedule Discovery Call</a>
+          <a href="pages/contact.html" class="btn btn-primary btn-lg">Start Project Conversation</a>
+          <a href="pages/404.html" class="btn btn-secondary btn-lg">Schedule Discovery Call</a>
         </div>
       </div>
     </section>
@@ -700,10 +713,10 @@
           <h4 class="footer-title">Quick Links</h4>
           <ul class="footer-links">
             <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Services</a></li>
-            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="pages/about.html" class="footer-link">About Us</a></li>
+            <li><a href="pages/services.html" class="footer-link">Services</a></li>
+            <li><a href="pages/portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="pages/contact.html" class="footer-link">Contact</a></li>
           </ul>
         </div>
 
@@ -711,11 +724,11 @@
         <div>
           <h4 class="footer-title">Disciplines</h4>
           <ul class="footer-links">
-            <li><a href="404.html" class="footer-link">Brand Architecture</a></li>
-            <li><a href="404.html" class="footer-link">Digital Product UI/UX</a></li>
-            <li><a href="404.html" class="footer-link">Motion & 3D Shaders</a></li>
-            <li><a href="404.html" class="footer-link">Full-Stack Engineering</a></li>
-            <li><a href="404.html" class="footer-link">Design System Tokens</a></li>
+            <li><a href="pages/404.html" class="footer-link">Brand Architecture</a></li>
+            <li><a href="pages/404.html" class="footer-link">Digital Product UI/UX</a></li>
+            <li><a href="pages/404.html" class="footer-link">Motion & 3D Shaders</a></li>
+            <li><a href="pages/404.html" class="footer-link">Full-Stack Engineering</a></li>
+            <li><a href="pages/404.html" class="footer-link">Design System Tokens</a></li>
           </ul>
         </div>
 
@@ -728,28 +741,28 @@
           </div>
           <div class="footer-contact-item">
             <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <a href="404.html" class="footer-link">+91 9876543210</a>
+            <a href="pages/404.html" class="footer-link">+91 9876543210</a>
           </div>
           <div class="footer-contact-item">
             <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <a href="404.html" class="footer-link">hello@thestackly.com</a>
+            <a href="pages/404.html" class="footer-link">hello@thestackly.com</a>
           </div>
 
           <!-- Social media icon + label -->
           <div class="footer-socials">
-            <a href="404.html" class="footer-social-btn" title="LinkedIn">
+            <a href="pages/404.html" class="footer-social-btn" title="LinkedIn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.89 0-1.61.72-1.61 1.61s.72 1.61 1.61 1.61 1.61-.72 1.61-1.61-.72-1.61-1.61-1.61z"/></svg>
               <span>LinkedIn</span>
             </a>
-            <a href="404.html" class="footer-social-btn" title="Twitter / X">
+            <a href="pages/404.html" class="footer-social-btn" title="Twitter / X">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               <span>X / Twitter</span>
             </a>
-            <a href="404.html" class="footer-social-btn" title="Instagram">
+            <a href="pages/404.html" class="footer-social-btn" title="Instagram">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               <span>Instagram</span>
             </a>
-            <a href="404.html" class="footer-social-btn" title="Dribbble">
+            <a href="pages/404.html" class="footer-social-btn" title="Dribbble">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path><path d="M21.75 12.84c-6.62-1.41-12.14 1-15.35 6.07"></path></svg>
               <span>Dribbble</span>
             </a>
@@ -761,10 +774,10 @@
       <div class="footer-bottom">
         <div>&copy; 2026 Stackly Creative Agency. All rights reserved. Designed for exceptional human experiences.</div>
         <div class="footer-legal-links">
-          <a href="404.html">Privacy Policy</a>
-          <a href="404.html">Terms of Service</a>
-          <a href="404.html">Cookie Preferences</a>
-          <a href="404.html">Sitemap</a>
+          <a href="pages/404.html">Privacy Policy</a>
+          <a href="pages/404.html">Terms of Service</a>
+          <a href="pages/404.html">Cookie Preferences</a>
+          <a href="pages/404.html">Sitemap</a>
         </div>
       </div>
     </div>

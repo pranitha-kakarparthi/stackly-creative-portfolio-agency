@@ -1,3 +1,9 @@
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+}
+
 /* ==========================================================================
    STACKLY CREATIVE AGENCY - AUTHENTICATION STYLES (SIGN IN & SIGN UP)
    Layout: Split Layout
@@ -17,7 +23,7 @@
 /* Split Layout Container */
 .auth-split-wrapper {
   display: flex;
-  width: 100vw;
+  width: 100%; max-width: 100%;
   min-height: 100vh;
   position: relative;
 }
@@ -481,7 +487,13 @@
   color: var(--color-buttercream);
 }
 
-/* Responsive Split Layout */
+/* ==========================================================================
+   AUTH PAGES COMPREHENSIVE RESPONSIVE SUITE
+   Breakpoints: 320px, 375px, 425px, 768px, 992px, 1440px
+   Orientation Modes: Portrait & Landscape
+   ========================================================================== */
+
+/* 992px (Tablet / Small Desktop Split Stack) */
 @media (max-width: 992px) {
   .auth-split-wrapper {
     flex-direction: column;
@@ -491,19 +503,162 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 40px 24px;
+    padding: 48px 32px;
   }
 
   .auth-right-scrollable {
     width: 100%;
     min-height: auto;
-    padding: 40px 24px 60px;
+    padding: 40px 32px 60px;
     overflow-y: visible;
   }
 
   .form-grid-2 {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+}
+
+/* 480px (Large / Standard Mobile) */
+@media (max-width: 480px) {
+  .auth-left-fixed {
+    padding: 32px 20px;
+  }
+
+  .auth-right-scrollable {
+    padding: 30px 20px 50px;
+  }
+
+  .auth-heading {
+    font-size: 1.85rem;
+  }
+
+  .auth-social-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .auth-top-nav {
+    margin-bottom: 32px;
+  }
+
+  .phone-input-group {
+    gap: 8px;
+  }
+
+  .country-code-select {
+    width: 95px;
+    padding: 12px 8px;
+    font-size: 0.85rem;
+  }
+
+  .auth-quote-card {
+    padding: 18px 16px;
+  }
+
+  .auth-quote-text {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .strength-rules-list {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .strength-rule-item {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
+
+/* 375px (Medium Mobile - e.g. iPhone SE / Mini) */
+@media (max-width: 375px) {
+  .auth-left-fixed {
+    padding: 24px 16px;
+  }
+
+  .auth-right-scrollable {
+    padding: 24px 16px 40px;
+  }
+
+  .auth-heading {
+    font-size: 1.65rem;
+  }
+
+  .country-code-select {
+    width: 90px;
+    padding: 12px 6px;
+    font-size: 0.8rem;
+  }
+
+  .btn-social {
+    padding: 10px 14px;
+    font-size: 0.825rem;
+  }
+
+  .auth-quote-card {
+    padding: 16px 14px;
+  }
+}
+
+/* 320px (Small Mobile - compact screen width) */
+@media (max-width: 320px) {
+  .auth-left-fixed {
+    padding: 20px 12px;
+  }
+
+  .auth-right-scrollable {
+    padding: 20px 12px 36px;
+  }
+
+  .auth-logo {
+    height: 32px;
+  }
+
+  .auth-back-home {
+    padding: 6px 12px !important;
+    font-size: 0.775rem !important;
+  }
+
+  .auth-heading {
+    font-size: 1.5rem;
+  }
+
+  .country-code-select {
+    width: 82px;
+    padding: 10px 4px;
+    font-size: 0.75rem;
+  }
+
+  .form-control {
+    padding: 12px 10px;
+    font-size: 0.875rem;
+  }
+
+  .btn-social {
+    padding: 8px 10px;
+    font-size: 0.775rem;
+  }
+}
+
+/* Auth Landscape Orientation (max-height <= 520px) */
+@media (max-height: 520px) and (orientation: landscape) {
+  .auth-split-wrapper {
+    flex-direction: column;
+  }
+
+  .auth-left-fixed {
+    padding: 20px 24px;
+    height: auto;
+  }
+
+  .auth-brand-statement h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-right-scrollable {
+    padding: 24px;
   }
 }
 
